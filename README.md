@@ -13,4 +13,4 @@ Use this repository when creating a slide deck to present at conferences if you 
 
 ## License
 
-Copyright (C) 2015 Palantir.net, http://palantir.net/
+Copyright (C) 2015 Palantir.net. All rights reserved. http://palantir.net/
