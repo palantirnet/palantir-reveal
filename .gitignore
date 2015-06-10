@@ -1,0 +1,16 @@
+.DS_Store
+.svn
+log/*.log
+tmp/**
+node_modules/
+.sass-cache
+css/reveal.min.css
+js/reveal.min.js
+.travis.yml
+Gruntfile.js
+js
+lib
+LICENSE
+node_modules
+package.json
+plugin

@@ -1,0 +1,18 @@
+/**
+ * @file
+ * Style rules for general additional classes.
+ *
+ * @copyright Copyright (c) 2015 Palantir.net
+ */
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+
+  img {
+    width: 150px;
+    padding: 0 0 1em 1em;
+  }
+}
