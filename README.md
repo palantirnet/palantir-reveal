@@ -1,4 +1,4 @@
-Note: This will not work with the online editor at slides.com. If you would like to use the online editor, you can build your html slides and copy and paste the slides content into the existing index file in this repository.
+This will not work directly with the online editor at slides.com. If you would like to use the online editor, you can build your html slides and copy and paste the slides content into the existing index file in this repository. Some of your inline styles may or may not be lost.
 
 *Note: a Slides.com free account does not let you include custom CSS which means we cannot use our fonts, or add our logo in an anchored, out of the way area. We are also not afforded as much customization as if you create your deck manually.*
 
