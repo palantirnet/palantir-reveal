@@ -41,7 +41,7 @@ body.dark {
  * HEADERS
  *********************************************/
 .light {
-	%heading,
+	.reveal h1,
 	.reveal h2,
 	.reveal h3,
 	.reveal h4,
@@ -52,7 +52,7 @@ body.dark {
 }
 
 .dark {
-	%heading,
+	.reveal h1,
 	.reveal h2,
 	.reveal h3,
 	.reveal h4,
@@ -66,7 +66,7 @@ body.dark {
 %heading,
 .reveal h2,
 .reveal h3 {
-	margin: 0.15em 0 0.25em;
+	margin: 0.15em 0 0.35em;
 	font-family: $headingFont;
 	font-weight: $headingFontWeight;
 	line-height: $headingLineHeight;
@@ -77,7 +77,7 @@ body.dark {
 
 .reveal h1 {
 	@extend %heading;
-	margin: 0.1em 0;
+	margin: 0.15em 0 0.2em;
 	letter-spacing: -1px;
 }
 

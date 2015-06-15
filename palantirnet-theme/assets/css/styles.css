@@ -1664,9 +1664,7 @@ body.dark {
  * HEADERS
  *********************************************/
 /* line 44, ../sass/_theme.scss */
-.light .reveal h1, .reveal .light h1, .light .reveal h4, .reveal .light h4, .light .reveal h5, .reveal .light h5,
-.light .reveal h6,
-.reveal .light h6,
+.light .reveal h1,
 .light .reveal h2,
 .light .reveal h3,
 .light .reveal h4,
@@ -1676,9 +1674,7 @@ body.dark {
 }
 
 /* line 55, ../sass/_theme.scss */
-.dark .reveal h1, .reveal .dark h1, .dark .reveal h4, .reveal .dark h4, .dark .reveal h5, .reveal .dark h5,
-.dark .reveal h6,
-.reveal .dark h6,
+.dark .reveal h1,
 .dark .reveal h2,
 .dark .reveal h3,
 .dark .reveal h4,
@@ -1692,7 +1688,7 @@ body.dark {
 .reveal h6,
 .reveal h2,
 .reveal h3 {
-  margin: 0.15em 0 0.25em;
+  margin: 0.15em 0 0.35em;
   font-family: "proxima-nova-cond", sans-serif;
   font-weight: 600;
   line-height: 1;
@@ -1703,7 +1699,7 @@ body.dark {
 
 /* line 78, ../sass/_theme.scss */
 .reveal h1 {
-  margin: 0.1em 0;
+  margin: 0.15em 0 0.2em;
   letter-spacing: -1px;
 }
 
