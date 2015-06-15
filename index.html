@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Title goes here</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Describe your Presentation here">
+		<meta name="author" content="Your Name Here">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -17,15 +17,12 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="palantirnet-theme/assets/css/styles.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'palantirnet-theme/assets/css/print/pdf.css' : 'palantirnet-theme/assets/css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
@@ -34,27 +31,44 @@
 		<![endif]-->
 	</head>
 
-	<body>
+	<!-- Change body class to "dark" if you prefer a dark theme, or "light" if you'd rather have a light theme-->
+	<body class="light">
 
 		<div class="reveal">
 		<div class="logo">
-			<img src="palantirnet-theme/assets/imgs/palantirnet-logo.svg" title="Palantir.net's Logo">
+			<p>Palantir.net</p>
 		</div>
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Palantir.net's Reveal.js Template</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h1>Reveal.js Light Theme</h1>
+					<h3>A base theme for Palantir.net's Reveal.js presentations</h3>
 					<p>
-						<small>This theme was created built for Reveal.js by Hakim El Hattab</small>
+						<small>This theme was created built for Reveal.js by <a href="http://palantir.net/">Palantir.net</a></small>
 					</p>
 				</section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
+				<section class="l-4up">
+					<h1>Hello There</h1>
+					<h2>4 column layout</h2>
+					<div>
+						<h3>Column 1</h3>
+						<h4>This is a 4th heading</h4>
 						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+					</div>
+					<div>
+						<h3>Column 2</h3>
+						<h5>This is an h5</h5>
+						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+					</div>
+					<div>
+						<h3>Column 3</h3>
+						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+					</div>
+					<div>
+						<h3>Column 4</h3>
+						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+					</div>
 				</section>
 
 				<!-- Example of nested vertical slides -->
@@ -70,6 +84,11 @@
 					</section>
 					<section>
 						<h2>Basement Level 1</h2>
+						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+						<blockquote>
+							This is an example of what a blockquote looks like if you use the blockquote element.
+						</blockquote>
+						<span class="attribute">Add an attribute with a span classed "attribute"</span>
 						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
 					</section>
 					<section>
@@ -226,7 +245,7 @@
 
 				<section>
 					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
+					<pre class="no-container"><code data-trim contenteditable>
 function linkify( selector ) {
   if( supports3DTransforms ) {
 
@@ -382,7 +401,7 @@ Reveal.addEventListener( 'customevent', function() {
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<script src="palantirnet-theme/assets/js/reveal.js"></script>
 
 		<script>
 
