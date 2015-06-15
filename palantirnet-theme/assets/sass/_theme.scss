@@ -4,16 +4,20 @@
  * GLOBAL STYLES
  *********************************************/
 
-body {
+body.light {
 	@include bodyBackground();
-	background-color: $backgroundColor;
+	background-color: $lt-gray;
+}
+
+body.dark {
+	@include bodyBackground();
+	background-color: $dk-gray;
 }
 
 .reveal {
 	font-family: $mainFont;
 	font-size: $mainFontSize;
 	font-weight: normal;
-	color: $mainColor;
 }
 
 ::selection {
@@ -28,38 +32,73 @@ body {
 	font-weight: inherit;
 }
 
+.reveal .slide--large {
+	width: 120%;
+	height: 120%;
+}
+
 /*********************************************
  * HEADERS
  *********************************************/
+.light {
+	%heading,
+	.reveal h2,
+	.reveal h3,
+	.reveal h4,
+	.reveal h5,
+	.reveal h6 {
+		color: $dk-gray;
+	}
+}
 
-.reveal h1,
+.dark {
+	%heading,
+	.reveal h2,
+	.reveal h3,
+	.reveal h4,
+	.reveal h5,
+	.reveal h6 {
+		color: $lt-gray;
+	}
+}
+
+
+%heading,
 .reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
-	margin: $headingMargin;
-	color: $headingColor;
-
+.reveal h3 {
+	margin: 0.15em 0 0.25em;
 	font-family: $headingFont;
 	font-weight: $headingFontWeight;
 	line-height: $headingLineHeight;
 	letter-spacing: $headingLetterSpacing;
-
 	text-transform: $headingTextTransform;
-	text-shadow: $headingTextShadow;
-
 	word-wrap: break-word;
+}
+
+.reveal h1 {
+	@extend %heading;
+	margin: 0.1em 0;
+	letter-spacing: -1px;
+}
+
+.reveal h4 {
+	@extend %heading;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.reveal h5,
+.reveal h6 {
+	@extend %heading;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 3px;
 }
 
 .reveal h1 {font-size: $heading1Size; }
 .reveal h2 {font-size: $heading2Size; }
 .reveal h3 {font-size: $heading3Size; }
 .reveal h4 {font-size: $heading4Size; }
-
-.reveal h1 {
-	text-shadow: $heading1TextShadow;
-}
 
 
 /*********************************************
@@ -128,21 +167,22 @@ body {
 	margin-left: 40px;
 }
 
-.reveal q,
-.reveal blockquote {
-	quotes: none;
-}
-
 .reveal blockquote {
 	display: block;
 	position: relative;
-	width: 70%;
-	margin: $blockMargin auto;
-	padding: 5px;
+	width: 80%;
+	margin: 1em auto;
+	padding: 0.5em;
 
+	font-family: "proxima-nova-cond", sans-serif;
+	font-size: 1.25em;
+	text-align: center;
 	font-style: italic;
-	background: rgba(255, 255, 255, 0.05);
-	box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+	background: none;
+	box-shadow: none;
+	color: $teal;
+	border-top: 1px dotted $teal;
+	border-bottom: 1px dotted $teal;
 }
 	.reveal blockquote p:first-child,
 	.reveal blockquote p:last-child {
@@ -151,35 +191,14 @@ body {
 
 .reveal q {
 	font-style: italic;
-}
 
-.reveal pre {
-	display: block;
-	position: relative;
-	width: 90%;
-	margin: $blockMargin auto;
+	&:before {
+	  content: '\201C';
+	}
 
-	text-align: left;
-	font-size: 0.55em;
-	font-family: monospace;
-	line-height: 1.2em;
-
-	word-wrap: break-word;
-
-	box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
-}
-.reveal code {
-	font-family: monospace;
-}
-
-.reveal pre code {
-	display: block;
-	padding: 5px;
-	overflow: auto;
-	max-height: 400px;
-	word-wrap: normal;
-	background: #3F3F3F;
-	color: #DCDCDC;
+	&:after {
+	  content: '\201D';
+	}
 }
 
 .reveal table {
@@ -263,10 +282,10 @@ body {
 
 .reveal section img {
 	margin: 15px 0px;
-	background: rgba(255,255,255,0.12);
-	border: 4px solid $mainColor;
+	background: none;
+	border: 0;
 
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	box-shadow: none;
 }
 
 	.reveal a img {
@@ -279,7 +298,7 @@ body {
 		background: rgba(255,255,255,0.2);
 		border-color: $linkColor;
 
-		box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+		box-shadow: none;
 	}
 
 

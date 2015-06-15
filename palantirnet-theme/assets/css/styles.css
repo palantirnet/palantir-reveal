@@ -871,28 +871,37 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: black;
   visibility: hidden;
   opacity: 0;
   z-index: 100;
   transition: all 1s ease;
 }
 
-/* line 740, ../sass/_reveal.scss */
+/* line 739, ../sass/_reveal.scss */
 .reveal.paused .pause-overlay {
   visibility: visible;
   opacity: 1;
 }
 
+/* line 744, ../sass/_reveal.scss */
+.light .reveal .pause-overlay {
+  background: #dbe8ec;
+}
+
+/* line 748, ../sass/_reveal.scss */
+.dark .reveal .pause-overlay {
+  background: #344041;
+}
+
 /*********************************************
  * FALLBACK
  *********************************************/
-/* line 750, ../sass/_reveal.scss */
+/* line 757, ../sass/_reveal.scss */
 .no-transforms {
   overflow-y: auto;
 }
 
-/* line 754, ../sass/_reveal.scss */
+/* line 761, ../sass/_reveal.scss */
 .no-transforms .reveal .slides {
   position: relative;
   width: 80%;
@@ -903,13 +912,13 @@ body {
   text-align: center;
 }
 
-/* line 764, ../sass/_reveal.scss */
+/* line 771, ../sass/_reveal.scss */
 .no-transforms .reveal .controls,
 .no-transforms .reveal .progress {
   display: none !important;
 }
 
-/* line 769, ../sass/_reveal.scss */
+/* line 776, ../sass/_reveal.scss */
 .no-transforms .reveal .slides section {
   display: block !important;
   opacity: 1 !important;
@@ -922,12 +931,12 @@ body {
   transform: none;
 }
 
-/* line 781, ../sass/_reveal.scss */
+/* line 788, ../sass/_reveal.scss */
 .no-transforms .reveal .slides section section {
   left: 0;
 }
 
-/* line 785, ../sass/_reveal.scss */
+/* line 792, ../sass/_reveal.scss */
 .reveal .no-transition,
 .reveal .no-transition * {
   transition: none !important;
@@ -936,7 +945,7 @@ body {
 /*********************************************
  * PER-SLIDE BACKGROUNDS
  *********************************************/
-/* line 795, ../sass/_reveal.scss */
+/* line 802, ../sass/_reveal.scss */
 .reveal .backgrounds {
   position: absolute;
   width: 100%;
@@ -946,7 +955,7 @@ body {
   perspective: 600px;
 }
 
-/* line 803, ../sass/_reveal.scss */
+/* line 810, ../sass/_reveal.scss */
 .reveal .slide-background {
   display: none;
   position: absolute;
@@ -961,25 +970,25 @@ body {
   transition: all 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
 }
 
-/* line 819, ../sass/_reveal.scss */
+/* line 826, ../sass/_reveal.scss */
 .reveal .slide-background.stack {
   display: block;
 }
 
-/* line 823, ../sass/_reveal.scss */
+/* line 830, ../sass/_reveal.scss */
 .reveal .slide-background.present {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 828, ../sass/_reveal.scss */
+/* line 835, ../sass/_reveal.scss */
 .print-pdf .reveal .slide-background {
   opacity: 1 !important;
   visibility: visible !important;
 }
 
 /* Video backgrounds */
-/* line 834, ../sass/_reveal.scss */
+/* line 841, ../sass/_reveal.scss */
 .reveal .slide-background video {
   position: absolute;
   width: 100%;
@@ -991,67 +1000,67 @@ body {
 }
 
 /* Immediate transition style */
-/* line 845, ../sass/_reveal.scss */
+/* line 852, ../sass/_reveal.scss */
 .reveal[data-background-transition=none] > .backgrounds .slide-background,
 .reveal > .backgrounds .slide-background[data-background-transition=none] {
   transition: none;
 }
 
 /* Slide */
-/* line 851, ../sass/_reveal.scss */
+/* line 858, ../sass/_reveal.scss */
 .reveal[data-background-transition=slide] > .backgrounds .slide-background,
 .reveal > .backgrounds .slide-background[data-background-transition=slide] {
   opacity: 1;
   backface-visibility: hidden;
 }
 
-/* line 856, ../sass/_reveal.scss */
+/* line 863, ../sass/_reveal.scss */
 .reveal[data-background-transition=slide] > .backgrounds .slide-background.past,
 .reveal > .backgrounds .slide-background.past[data-background-transition=slide] {
   transform: translate(-100%, 0);
 }
 
-/* line 860, ../sass/_reveal.scss */
+/* line 867, ../sass/_reveal.scss */
 .reveal[data-background-transition=slide] > .backgrounds .slide-background.future,
 .reveal > .backgrounds .slide-background.future[data-background-transition=slide] {
   transform: translate(100%, 0);
 }
 
-/* line 865, ../sass/_reveal.scss */
+/* line 872, ../sass/_reveal.scss */
 .reveal[data-background-transition=slide] > .backgrounds .slide-background > .slide-background.past,
 .reveal > .backgrounds .slide-background > .slide-background.past[data-background-transition=slide] {
   transform: translate(0, -100%);
 }
 
-/* line 869, ../sass/_reveal.scss */
+/* line 876, ../sass/_reveal.scss */
 .reveal[data-background-transition=slide] > .backgrounds .slide-background > .slide-background.future,
 .reveal > .backgrounds .slide-background > .slide-background.future[data-background-transition=slide] {
   transform: translate(0, 100%);
 }
 
 /* Convex */
-/* line 876, ../sass/_reveal.scss */
+/* line 883, ../sass/_reveal.scss */
 .reveal[data-background-transition=convex] > .backgrounds .slide-background.past,
 .reveal > .backgrounds .slide-background.past[data-background-transition=convex] {
   opacity: 0;
   transform: translate3d(-100%, 0, 0) rotateY(-90deg) translate3d(-100%, 0, 0);
 }
 
-/* line 881, ../sass/_reveal.scss */
+/* line 888, ../sass/_reveal.scss */
 .reveal[data-background-transition=convex] > .backgrounds .slide-background.future,
 .reveal > .backgrounds .slide-background.future[data-background-transition=convex] {
   opacity: 0;
   transform: translate3d(100%, 0, 0) rotateY(90deg) translate3d(100%, 0, 0);
 }
 
-/* line 887, ../sass/_reveal.scss */
+/* line 894, ../sass/_reveal.scss */
 .reveal[data-background-transition=convex] > .backgrounds .slide-background > .slide-background.past,
 .reveal > .backgrounds .slide-background > .slide-background.past[data-background-transition=convex] {
   opacity: 0;
   transform: translate3d(0, -100%, 0) rotateX(90deg) translate3d(0, -100%, 0);
 }
 
-/* line 892, ../sass/_reveal.scss */
+/* line 899, ../sass/_reveal.scss */
 .reveal[data-background-transition=convex] > .backgrounds .slide-background > .slide-background.future,
 .reveal > .backgrounds .slide-background > .slide-background.future[data-background-transition=convex] {
   opacity: 0;
@@ -1059,28 +1068,28 @@ body {
 }
 
 /* Concave */
-/* line 900, ../sass/_reveal.scss */
+/* line 907, ../sass/_reveal.scss */
 .reveal[data-background-transition=concave] > .backgrounds .slide-background.past,
 .reveal > .backgrounds .slide-background.past[data-background-transition=concave] {
   opacity: 0;
   transform: translate3d(-100%, 0, 0) rotateY(90deg) translate3d(-100%, 0, 0);
 }
 
-/* line 905, ../sass/_reveal.scss */
+/* line 912, ../sass/_reveal.scss */
 .reveal[data-background-transition=concave] > .backgrounds .slide-background.future,
 .reveal > .backgrounds .slide-background.future[data-background-transition=concave] {
   opacity: 0;
   transform: translate3d(100%, 0, 0) rotateY(-90deg) translate3d(100%, 0, 0);
 }
 
-/* line 911, ../sass/_reveal.scss */
+/* line 918, ../sass/_reveal.scss */
 .reveal[data-background-transition=concave] > .backgrounds .slide-background > .slide-background.past,
 .reveal > .backgrounds .slide-background > .slide-background.past[data-background-transition=concave] {
   opacity: 0;
   transform: translate3d(0, -100%, 0) rotateX(-90deg) translate3d(0, -100%, 0);
 }
 
-/* line 916, ../sass/_reveal.scss */
+/* line 923, ../sass/_reveal.scss */
 .reveal[data-background-transition=concave] > .backgrounds .slide-background > .slide-background.future,
 .reveal > .backgrounds .slide-background > .slide-background.future[data-background-transition=concave] {
   opacity: 0;
@@ -1088,13 +1097,13 @@ body {
 }
 
 /* Zoom */
-/* line 923, ../sass/_reveal.scss */
+/* line 930, ../sass/_reveal.scss */
 .reveal[data-background-transition=zoom] > .backgrounds .slide-background,
 .reveal > .backgrounds .slide-background[data-background-transition=zoom] {
   transition-timing-function: ease;
 }
 
-/* line 928, ../sass/_reveal.scss */
+/* line 935, ../sass/_reveal.scss */
 .reveal[data-background-transition=zoom] > .backgrounds .slide-background.past,
 .reveal > .backgrounds .slide-background.past[data-background-transition=zoom] {
   opacity: 0;
@@ -1102,7 +1111,7 @@ body {
   transform: scale(16);
 }
 
-/* line 934, ../sass/_reveal.scss */
+/* line 941, ../sass/_reveal.scss */
 .reveal[data-background-transition=zoom] > .backgrounds .slide-background.future,
 .reveal > .backgrounds .slide-background.future[data-background-transition=zoom] {
   opacity: 0;
@@ -1110,7 +1119,7 @@ body {
   transform: scale(0.2);
 }
 
-/* line 941, ../sass/_reveal.scss */
+/* line 948, ../sass/_reveal.scss */
 .reveal[data-background-transition=zoom] > .backgrounds .slide-background > .slide-background.past,
 .reveal > .backgrounds .slide-background > .slide-background.past[data-background-transition=zoom] {
   opacity: 0;
@@ -1118,7 +1127,7 @@ body {
   transform: scale(16);
 }
 
-/* line 947, ../sass/_reveal.scss */
+/* line 954, ../sass/_reveal.scss */
 .reveal[data-background-transition=zoom] > .backgrounds .slide-background > .slide-background.future,
 .reveal > .backgrounds .slide-background > .slide-background.future[data-background-transition=zoom] {
   opacity: 0;
@@ -1127,12 +1136,12 @@ body {
 }
 
 /* Global transition speed settings */
-/* line 956, ../sass/_reveal.scss */
+/* line 963, ../sass/_reveal.scss */
 .reveal[data-transition-speed="fast"] > .backgrounds .slide-background {
   transition-duration: 400ms;
 }
 
-/* line 959, ../sass/_reveal.scss */
+/* line 966, ../sass/_reveal.scss */
 .reveal[data-transition-speed="slow"] > .backgrounds .slide-background {
   transition-duration: 1200ms;
 }
@@ -1140,12 +1149,12 @@ body {
 /*********************************************
  * OVERVIEW
  *********************************************/
-/* line 968, ../sass/_reveal.scss */
+/* line 975, ../sass/_reveal.scss */
 .reveal.overview {
   perspective-origin: 50% 50%;
   perspective: 700px;
 }
-/* line 972, ../sass/_reveal.scss */
+/* line 979, ../sass/_reveal.scss */
 .reveal.overview .slides section {
   height: 700px;
   opacity: 1 !important;
@@ -1154,23 +1163,23 @@ body {
   cursor: pointer;
   box-sizing: border-box;
 }
-/* line 980, ../sass/_reveal.scss */
+/* line 987, ../sass/_reveal.scss */
 .reveal.overview .slides section:hover,
 .reveal.overview .slides section.present {
   outline: 10px solid rgba(150, 150, 150, 0.4);
   outline-offset: 10px;
 }
-/* line 985, ../sass/_reveal.scss */
+/* line 992, ../sass/_reveal.scss */
 .reveal.overview .slides section .fragment {
   opacity: 1;
   transition: none;
 }
-/* line 989, ../sass/_reveal.scss */
+/* line 996, ../sass/_reveal.scss */
 .reveal.overview .slides section:after,
 .reveal.overview .slides section:before {
   display: none !important;
 }
-/* line 993, ../sass/_reveal.scss */
+/* line 1000, ../sass/_reveal.scss */
 .reveal.overview .slides > section.stack {
   padding: 0;
   top: 0 !important;
@@ -1178,11 +1187,11 @@ body {
   outline: none;
   overflow: visible;
 }
-/* line 1001, ../sass/_reveal.scss */
+/* line 1008, ../sass/_reveal.scss */
 .reveal.overview .backgrounds {
   perspective: inherit;
 }
-/* line 1005, ../sass/_reveal.scss */
+/* line 1012, ../sass/_reveal.scss */
 .reveal.overview .backgrounds .slide-background {
   opacity: 1;
   visibility: visible;
@@ -1190,19 +1199,19 @@ body {
   outline-offset: 10px;
 }
 
-/* line 1017, ../sass/_reveal.scss */
+/* line 1024, ../sass/_reveal.scss */
 .reveal.overview .slides section,
 .reveal.overview-deactivating .slides section {
   transition: none;
 }
 
-/* line 1022, ../sass/_reveal.scss */
+/* line 1029, ../sass/_reveal.scss */
 .reveal.overview .backgrounds .slide-background,
 .reveal.overview-deactivating .backgrounds .slide-background {
   transition: none;
 }
 
-/* line 1027, ../sass/_reveal.scss */
+/* line 1034, ../sass/_reveal.scss */
 .reveal.overview-animated .slides {
   transition: transform 0.4s ease;
 }
@@ -1210,7 +1219,7 @@ body {
 /*********************************************
  * RTL SUPPORT
  *********************************************/
-/* line 1036, ../sass/_reveal.scss */
+/* line 1043, ../sass/_reveal.scss */
 .reveal.rtl .slides,
 .reveal.rtl .slides h1,
 .reveal.rtl .slides h2,
@@ -1222,19 +1231,19 @@ body {
   font-family: sans-serif;
 }
 
-/* line 1047, ../sass/_reveal.scss */
+/* line 1054, ../sass/_reveal.scss */
 .reveal.rtl pre,
 .reveal.rtl code {
   direction: ltr;
 }
 
-/* line 1052, ../sass/_reveal.scss */
+/* line 1059, ../sass/_reveal.scss */
 .reveal.rtl ol,
 .reveal.rtl ul {
   text-align: right;
 }
 
-/* line 1057, ../sass/_reveal.scss */
+/* line 1064, ../sass/_reveal.scss */
 .reveal.rtl .progress span {
   float: right;
 }
@@ -1242,18 +1251,18 @@ body {
 /*********************************************
  * PARALLAX BACKGROUND
  *********************************************/
-/* line 1065, ../sass/_reveal.scss */
+/* line 1072, ../sass/_reveal.scss */
 .reveal.has-parallax-background .backgrounds {
   transition: all 0.8s ease;
 }
 
 /* Global transition speed settings */
-/* line 1070, ../sass/_reveal.scss */
+/* line 1077, ../sass/_reveal.scss */
 .reveal.has-parallax-background[data-transition-speed="fast"] .backgrounds {
   transition-duration: 400ms;
 }
 
-/* line 1073, ../sass/_reveal.scss */
+/* line 1080, ../sass/_reveal.scss */
 .reveal.has-parallax-background[data-transition-speed="slow"] .backgrounds {
   transition-duration: 1200ms;
 }
@@ -1261,7 +1270,7 @@ body {
 /*********************************************
  * LINK PREVIEW OVERLAY
  *********************************************/
-/* line 1082, ../sass/_reveal.scss */
+/* line 1089, ../sass/_reveal.scss */
 .reveal .overlay {
   position: absolute;
   top: 0;
@@ -1275,13 +1284,13 @@ body {
   transition: all 0.3s ease;
 }
 
-/* line 1094, ../sass/_reveal.scss */
+/* line 1101, ../sass/_reveal.scss */
 .reveal .overlay.visible {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 1099, ../sass/_reveal.scss */
+/* line 1106, ../sass/_reveal.scss */
 .reveal .overlay .spinner {
   position: absolute;
   display: block;
@@ -1297,7 +1306,7 @@ body {
   transition: all 0.3s ease;
 }
 
-/* line 1115, ../sass/_reveal.scss */
+/* line 1122, ../sass/_reveal.scss */
 .reveal .overlay header {
   position: absolute;
   left: 0;
@@ -1308,7 +1317,7 @@ body {
   border-bottom: 1px solid #222;
 }
 
-/* line 1124, ../sass/_reveal.scss */
+/* line 1131, ../sass/_reveal.scss */
 .reveal .overlay header a {
   display: inline-block;
   width: 40px;
@@ -1319,12 +1328,12 @@ body {
   box-sizing: border-box;
 }
 
-/* line 1134, ../sass/_reveal.scss */
+/* line 1141, ../sass/_reveal.scss */
 .reveal .overlay header a:hover {
   opacity: 1;
 }
 
-/* line 1137, ../sass/_reveal.scss */
+/* line 1144, ../sass/_reveal.scss */
 .reveal .overlay header a .icon {
   display: inline-block;
   width: 20px;
@@ -1334,17 +1343,17 @@ body {
   background-repeat: no-repeat;
 }
 
-/* line 1146, ../sass/_reveal.scss */
+/* line 1153, ../sass/_reveal.scss */
 .reveal .overlay header a.close .icon {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABkklEQVRYR8WX4VHDMAxG6wnoJrABZQPYBCaBTWAD2g1gE5gg6OOsXuxIlr40d81dfrSJ9V4c2VLK7spHuTJ/5wpM07QXuXc5X0opX2tEJcadjHuV80li/FgxTIEK/5QBCICBD6xEhSMGHgQPgBgLiYVAB1dpSqKDawxTohFw4JSEA3clzgIBPCURwE2JucBR7rhPJJv5OpJwDX+SfDjgx1wACQeJG1aChP9K/IMmdZ8DtESV1WyP3Bt4MwM6sj4NMxMYiqUWHQu4KYA/SYkIjOsm3BXYWMKFDwU2khjCQ4ELJUJ4SmClRArOCmSXGuKma0fYD5CbzHxFpCSGAhfAVSSUGDUk2BWZaff2g6GE15BsBQ9nwmpIGDiyHQddwNTMKkbZaf9fajXQca1EX44puJZUsnY0ObGmITE3GVLCbEhQUjGVt146j6oasWN+49Vph2w1pZ5EansNZqKBm1txbU57iRRcZ86RWMDdWtBJUHBHwoQPi1GV+JCbntmvok7iTX4/Up9mgyTc/FJYDTcndgH/AA5A/CHsyEkVAAAAAElFTkSuQmCC);
 }
 
-/* line 1149, ../sass/_reveal.scss */
+/* line 1156, ../sass/_reveal.scss */
 .reveal .overlay header a.external .icon {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAcElEQVRYR+2WSQoAIQwEzf8f7XiOMkUQxUPlGkM3hVmiQfQR9GYnH1SsAQlI4DiBqkCMoNb9y2e90IAEJPAcgdznU9+engMaeJ7Azh5Y1U67gAho4DqBqmB1buAf0MB1AlVBek83ZPkmJMGc1wAR+AAqod/B97TRpQAAAABJRU5ErkJggg==);
 }
 
-/* line 1153, ../sass/_reveal.scss */
+/* line 1160, ../sass/_reveal.scss */
 .reveal .overlay .viewport {
   position: absolute;
   top: 40px;
@@ -1353,7 +1362,7 @@ body {
   left: 0;
 }
 
-/* line 1161, ../sass/_reveal.scss */
+/* line 1168, ../sass/_reveal.scss */
 .reveal .overlay.overlay-preview .viewport iframe {
   width: 100%;
   height: 100%;
@@ -1365,26 +1374,26 @@ body {
   transition: all 0.3s ease;
 }
 
-/* line 1173, ../sass/_reveal.scss */
+/* line 1180, ../sass/_reveal.scss */
 .reveal .overlay.overlay-preview.loaded .viewport iframe {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 1178, ../sass/_reveal.scss */
+/* line 1185, ../sass/_reveal.scss */
 .reveal .overlay.overlay-preview.loaded .spinner {
   opacity: 0;
   visibility: hidden;
   transform: scale(0.2);
 }
 
-/* line 1184, ../sass/_reveal.scss */
+/* line 1191, ../sass/_reveal.scss */
 .reveal .overlay.overlay-help .viewport {
   overflow: auto;
   color: #fff;
 }
 
-/* line 1189, ../sass/_reveal.scss */
+/* line 1196, ../sass/_reveal.scss */
 .reveal .overlay.overlay-help .viewport .viewport-inner {
   width: 600px;
   margin: 0 auto;
@@ -1393,19 +1402,19 @@ body {
   letter-spacing: normal;
 }
 
-/* line 1197, ../sass/_reveal.scss */
+/* line 1204, ../sass/_reveal.scss */
 .reveal .overlay.overlay-help .viewport .viewport-inner .title {
   font-size: 20px;
 }
 
-/* line 1201, ../sass/_reveal.scss */
+/* line 1208, ../sass/_reveal.scss */
 .reveal .overlay.overlay-help .viewport .viewport-inner table {
   border: 1px solid #fff;
   border-collapse: collapse;
   font-size: 14px;
 }
 
-/* line 1207, ../sass/_reveal.scss */
+/* line 1214, ../sass/_reveal.scss */
 .reveal .overlay.overlay-help .viewport .viewport-inner table th,
 .reveal .overlay.overlay-help .viewport .viewport-inner table td {
   width: 200px;
@@ -1414,7 +1423,7 @@ body {
   vertical-align: middle;
 }
 
-/* line 1215, ../sass/_reveal.scss */
+/* line 1222, ../sass/_reveal.scss */
 .reveal .overlay.overlay-help .viewport .viewport-inner table th {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1423,7 +1432,7 @@ body {
 /*********************************************
  * PLAYBACK COMPONENT
  *********************************************/
-/* line 1226, ../sass/_reveal.scss */
+/* line 1233, ../sass/_reveal.scss */
 .reveal .playback {
   position: fixed;
   left: 15px;
@@ -1433,7 +1442,7 @@ body {
   transition: all 400ms ease;
 }
 
-/* line 1235, ../sass/_reveal.scss */
+/* line 1242, ../sass/_reveal.scss */
 .reveal.overview .playback {
   opacity: 0;
   visibility: hidden;
@@ -1442,7 +1451,7 @@ body {
 /*********************************************
  * ROLLING LINKS
  *********************************************/
-/* line 1245, ../sass/_reveal.scss */
+/* line 1252, ../sass/_reveal.scss */
 .reveal .roll {
   display: inline-block;
   line-height: 1.2;
@@ -1452,13 +1461,13 @@ body {
   perspective-origin: 50% 50%;
 }
 
-/* line 1254, ../sass/_reveal.scss */
+/* line 1261, ../sass/_reveal.scss */
 .reveal .roll:hover {
   background: none;
   text-shadow: none;
 }
 
-/* line 1258, ../sass/_reveal.scss */
+/* line 1265, ../sass/_reveal.scss */
 .reveal .roll span {
   display: block;
   position: relative;
@@ -1470,13 +1479,13 @@ body {
   backface-visibility: hidden;
 }
 
-/* line 1269, ../sass/_reveal.scss */
+/* line 1276, ../sass/_reveal.scss */
 .reveal .roll:hover span {
   background: rgba(0, 0, 0, 0.5);
   transform: translate3d(0px, 0px, -45px) rotateX(90deg);
 }
 
-/* line 1273, ../sass/_reveal.scss */
+/* line 1280, ../sass/_reveal.scss */
 .reveal .roll span:after {
   content: attr(data-title);
   display: block;
@@ -1492,7 +1501,7 @@ body {
 /*********************************************
  * SPEAKER NOTES
  *********************************************/
-/* line 1291, ../sass/_reveal.scss */
+/* line 1298, ../sass/_reveal.scss */
 .reveal aside.notes {
   display: none;
 }
@@ -1500,25 +1509,25 @@ body {
 /*********************************************
  * ZOOM PLUGIN
  *********************************************/
-/* line 1300, ../sass/_reveal.scss */
+/* line 1307, ../sass/_reveal.scss */
 .zoomed .reveal *,
 .zoomed .reveal *:before,
 .zoomed .reveal *:after {
   backface-visibility: visible !important;
 }
 
-/* line 1306, ../sass/_reveal.scss */
+/* line 1313, ../sass/_reveal.scss */
 .zoomed .reveal .progress,
 .zoomed .reveal .controls {
   opacity: 0;
 }
 
-/* line 1311, ../sass/_reveal.scss */
+/* line 1318, ../sass/_reveal.scss */
 .zoomed .reveal .roll span {
   background: none;
 }
 
-/* line 1315, ../sass/_reveal.scss */
+/* line 1322, ../sass/_reveal.scss */
 .zoomed .reveal .roll span:after {
   visibility: hidden;
 }
@@ -1613,90 +1622,136 @@ body {
  * GLOBAL STYLES
  *********************************************/
 /* line 7, ../sass/_theme.scss */
-body {
+body.light {
   background: #dbe8ec;
   background-color: #dbe8ec;
 }
 
 /* line 12, ../sass/_theme.scss */
-.reveal {
-  font-family: "proxima-nova", sans-serif;
-  font-size: 36px;
-  font-weight: normal;
-  color: #344041;
+body.dark {
+  background: #dbe8ec;
+  background-color: #344041;
 }
 
-/* line 19, ../sass/_theme.scss */
+/* line 17, ../sass/_theme.scss */
+.reveal {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+/* line 23, ../sass/_theme.scss */
 ::selection {
   color: #fff;
   background: #7f9aa0;
   text-shadow: none;
 }
 
-/* line 25, ../sass/_theme.scss */
+/* line 29, ../sass/_theme.scss */
 .reveal .slides > section,
 .reveal .slides > section > section {
   line-height: 1.3;
   font-weight: inherit;
 }
 
+/* line 35, ../sass/_theme.scss */
+.reveal .slide--large {
+  width: 120%;
+  height: 120%;
+}
+
 /*********************************************
  * HEADERS
  *********************************************/
-/* line 35, ../sass/_theme.scss */
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
-  margin: 0 0 20px 0;
+/* line 44, ../sass/_theme.scss */
+.light .reveal h1, .reveal .light h1, .light .reveal h4, .reveal .light h4, .light .reveal h5, .reveal .light h5,
+.light .reveal h6,
+.reveal .light h6,
+.light .reveal h2,
+.light .reveal h3,
+.light .reveal h4,
+.light .reveal h5,
+.light .reveal h6 {
   color: #344041;
+}
+
+/* line 55, ../sass/_theme.scss */
+.dark .reveal h1, .reveal .dark h1, .dark .reveal h4, .reveal .dark h4, .dark .reveal h5, .reveal .dark h5,
+.dark .reveal h6,
+.reveal .dark h6,
+.dark .reveal h2,
+.dark .reveal h3,
+.dark .reveal h4,
+.dark .reveal h5,
+.dark .reveal h6 {
+  color: #dbe8ec;
+}
+
+/* line 66, ../sass/_theme.scss */
+.reveal h1, .reveal h4, .reveal h5,
+.reveal h6,
+.reveal h2,
+.reveal h3 {
+  margin: 0.15em 0 0.25em;
   font-family: "proxima-nova-cond", sans-serif;
   font-weight: 600;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
-  text-shadow: none;
   word-wrap: break-word;
 }
 
-/* line 55, ../sass/_theme.scss */
+/* line 78, ../sass/_theme.scss */
 .reveal h1 {
-  font-size: 2.5em;
+  margin: 0.1em 0;
+  letter-spacing: -1px;
 }
 
-/* line 56, ../sass/_theme.scss */
+/* line 84, ../sass/_theme.scss */
+.reveal h4 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* line 90, ../sass/_theme.scss */
+.reveal h5,
+.reveal h6 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+/* line 98, ../sass/_theme.scss */
+.reveal h1 {
+  font-size: 3.25em;
+}
+
+/* line 99, ../sass/_theme.scss */
 .reveal h2 {
   font-size: 2em;
 }
 
-/* line 57, ../sass/_theme.scss */
+/* line 100, ../sass/_theme.scss */
 .reveal h3 {
   font-size: 1.5em;
 }
 
-/* line 58, ../sass/_theme.scss */
+/* line 101, ../sass/_theme.scss */
 .reveal h4 {
   font-size: 1em;
-}
-
-/* line 60, ../sass/_theme.scss */
-.reveal h1 {
-  text-shadow: none;
 }
 
 /*********************************************
  * OTHER
  *********************************************/
-/* line 69, ../sass/_theme.scss */
+/* line 108, ../sass/_theme.scss */
 .reveal p {
-  margin: 20px 0;
+  margin: 0.25em 0;
   line-height: 1.3;
 }
 
 /* Ensure certain elements are never larger than the slide itself */
-/* line 75, ../sass/_theme.scss */
+/* line 114, ../sass/_theme.scss */
 .reveal img,
 .reveal video,
 .reveal iframe {
@@ -1704,18 +1759,18 @@ body {
   max-height: 95%;
 }
 
-/* line 81, ../sass/_theme.scss */
+/* line 120, ../sass/_theme.scss */
 .reveal strong,
 .reveal b {
   font-weight: bold;
 }
 
-/* line 86, ../sass/_theme.scss */
+/* line 125, ../sass/_theme.scss */
 .reveal em {
   font-style: italic;
 }
 
-/* line 90, ../sass/_theme.scss */
+/* line 129, ../sass/_theme.scss */
 .reveal ol,
 .reveal dl,
 .reveal ul {
@@ -1724,27 +1779,27 @@ body {
   margin: 0 0 0 1em;
 }
 
-/* line 99, ../sass/_theme.scss */
+/* line 138, ../sass/_theme.scss */
 .reveal ol {
   list-style-type: decimal;
 }
 
-/* line 103, ../sass/_theme.scss */
+/* line 142, ../sass/_theme.scss */
 .reveal ul {
   list-style-type: disc;
 }
 
-/* line 107, ../sass/_theme.scss */
+/* line 146, ../sass/_theme.scss */
 .reveal ul ul {
   list-style-type: square;
 }
 
-/* line 111, ../sass/_theme.scss */
+/* line 150, ../sass/_theme.scss */
 .reveal ul ul ul {
   list-style-type: circle;
 }
 
-/* line 115, ../sass/_theme.scss */
+/* line 154, ../sass/_theme.scss */
 .reveal ul ul,
 .reveal ul ol,
 .reveal ol ol,
@@ -1753,88 +1808,66 @@ body {
   margin-left: 40px;
 }
 
-/* line 123, ../sass/_theme.scss */
+/* line 162, ../sass/_theme.scss */
 .reveal dt {
   font-weight: bold;
 }
 
-/* line 127, ../sass/_theme.scss */
+/* line 166, ../sass/_theme.scss */
 .reveal dd {
   margin-left: 40px;
 }
 
-/* line 131, ../sass/_theme.scss */
-.reveal q,
-.reveal blockquote {
-  quotes: none;
-}
-
-/* line 136, ../sass/_theme.scss */
+/* line 170, ../sass/_theme.scss */
 .reveal blockquote {
   display: block;
   position: relative;
-  width: 70%;
-  margin: 20px auto;
-  padding: 5px;
+  width: 80%;
+  margin: 1em auto;
+  padding: 0.5em;
+  font-family: "proxima-nova-cond", sans-serif;
+  font-size: 1.25em;
+  text-align: center;
   font-style: italic;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  background: none;
+  box-shadow: none;
+  color: #11a9a1;
+  border-top: 1px dotted #11a9a1;
+  border-bottom: 1px dotted #11a9a1;
 }
 
-/* line 147, ../sass/_theme.scss */
+/* line 187, ../sass/_theme.scss */
 .reveal blockquote p:first-child,
 .reveal blockquote p:last-child {
   display: inline-block;
 }
 
-/* line 152, ../sass/_theme.scss */
+/* line 192, ../sass/_theme.scss */
 .reveal q {
   font-style: italic;
 }
-
-/* line 156, ../sass/_theme.scss */
-.reveal pre {
-  display: block;
-  position: relative;
-  width: 90%;
-  margin: 20px auto;
-  text-align: left;
-  font-size: 0.55em;
-  font-family: monospace;
-  line-height: 1.2em;
-  word-wrap: break-word;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+/* line 195, ../sass/_theme.scss */
+.reveal q:before {
+  content: '\201C';
+}
+/* line 199, ../sass/_theme.scss */
+.reveal q:after {
+  content: '\201D';
 }
 
-/* line 171, ../sass/_theme.scss */
-.reveal code {
-  font-family: monospace;
-}
-
-/* line 175, ../sass/_theme.scss */
-.reveal pre code {
-  display: block;
-  padding: 5px;
-  overflow: auto;
-  max-height: 400px;
-  word-wrap: normal;
-  background: #3F3F3F;
-  color: #DCDCDC;
-}
-
-/* line 185, ../sass/_theme.scss */
+/* line 204, ../sass/_theme.scss */
 .reveal table {
   margin: auto;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 191, ../sass/_theme.scss */
+/* line 210, ../sass/_theme.scss */
 .reveal table th {
   font-weight: bold;
 }
 
-/* line 195, ../sass/_theme.scss */
+/* line 214, ../sass/_theme.scss */
 .reveal table th,
 .reveal table td {
   text-align: left;
@@ -1842,34 +1875,34 @@ body {
   border-bottom: 1px solid;
 }
 
-/* line 202, ../sass/_theme.scss */
+/* line 221, ../sass/_theme.scss */
 .reveal table th[align="center"],
 .reveal table td[align="center"] {
   text-align: center;
 }
 
-/* line 207, ../sass/_theme.scss */
+/* line 226, ../sass/_theme.scss */
 .reveal table th[align="right"],
 .reveal table td[align="right"] {
   text-align: right;
 }
 
-/* line 212, ../sass/_theme.scss */
+/* line 231, ../sass/_theme.scss */
 .reveal table tr:last-child td {
   border-bottom: none;
 }
 
-/* line 216, ../sass/_theme.scss */
+/* line 235, ../sass/_theme.scss */
 .reveal sup {
   vertical-align: super;
 }
 
-/* line 219, ../sass/_theme.scss */
+/* line 238, ../sass/_theme.scss */
 .reveal sub {
   vertical-align: sub;
 }
 
-/* line 223, ../sass/_theme.scss */
+/* line 242, ../sass/_theme.scss */
 .reveal small {
   display: inline-block;
   font-size: 0.6em;
@@ -1877,7 +1910,7 @@ body {
   vertical-align: top;
 }
 
-/* line 230, ../sass/_theme.scss */
+/* line 249, ../sass/_theme.scss */
 .reveal small * {
   vertical-align: top;
 }
@@ -1885,7 +1918,7 @@ body {
 /*********************************************
  * LINKS
  *********************************************/
-/* line 239, ../sass/_theme.scss */
+/* line 258, ../sass/_theme.scss */
 .reveal a {
   color: #11a9a1;
   text-decoration: none;
@@ -1894,14 +1927,14 @@ body {
   transition: color .15s ease;
 }
 
-/* line 247, ../sass/_theme.scss */
+/* line 266, ../sass/_theme.scss */
 .reveal a:hover {
-  color: #084c49;
+  color: #0c7b75;
   text-shadow: none;
   border: none;
 }
 
-/* line 254, ../sass/_theme.scss */
+/* line 273, ../sass/_theme.scss */
 .reveal .roll span:after {
   color: #fff;
   background: #0a635f;
@@ -1910,84 +1943,84 @@ body {
 /*********************************************
  * IMAGES
  *********************************************/
-/* line 264, ../sass/_theme.scss */
+/* line 283, ../sass/_theme.scss */
 .reveal section img {
   margin: 15px 0px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #344041;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background: none;
+  border: 0;
+  box-shadow: none;
 }
 
-/* line 272, ../sass/_theme.scss */
+/* line 291, ../sass/_theme.scss */
 .reveal a img {
   -webkit-transition: all .15s linear;
   -moz-transition: all .15s linear;
   transition: all .15s linear;
 }
 
-/* line 278, ../sass/_theme.scss */
+/* line 297, ../sass/_theme.scss */
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
   border-color: #11a9a1;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+  box-shadow: none;
 }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
-/* line 290, ../sass/_theme.scss */
+/* line 309, ../sass/_theme.scss */
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
   border-right-color: #11a9a1;
 }
 
-/* line 295, ../sass/_theme.scss */
+/* line 314, ../sass/_theme.scss */
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
   border-left-color: #11a9a1;
 }
 
-/* line 300, ../sass/_theme.scss */
+/* line 319, ../sass/_theme.scss */
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
   border-bottom-color: #11a9a1;
 }
 
-/* line 305, ../sass/_theme.scss */
+/* line 324, ../sass/_theme.scss */
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
   border-top-color: #11a9a1;
 }
 
-/* line 310, ../sass/_theme.scss */
+/* line 329, ../sass/_theme.scss */
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #084c49;
+  border-right-color: #0c7b75;
 }
 
-/* line 314, ../sass/_theme.scss */
+/* line 333, ../sass/_theme.scss */
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #084c49;
+  border-left-color: #0c7b75;
 }
 
-/* line 318, ../sass/_theme.scss */
+/* line 337, ../sass/_theme.scss */
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #084c49;
+  border-bottom-color: #0c7b75;
 }
 
-/* line 322, ../sass/_theme.scss */
+/* line 341, ../sass/_theme.scss */
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #084c49;
+  border-top-color: #0c7b75;
 }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
-/* line 331, ../sass/_theme.scss */
+/* line 350, ../sass/_theme.scss */
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 334, ../sass/_theme.scss */
+/* line 353, ../sass/_theme.scss */
 .reveal .progress span {
   background: #11a9a1;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -1998,7 +2031,7 @@ body {
 /*********************************************
  * SLIDE NUMBER
  *********************************************/
-/* line 345, ../sass/_theme.scss */
+/* line 364, ../sass/_theme.scss */
 .reveal .slide-number {
   color: #11a9a1;
 }
@@ -2009,6 +2042,271 @@ body {
  *
  * @copyright Copyright (c) 2015 Palantir.net
  */
+/* line 8, ../sass/_code.scss */
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0.25em auto;
+  text-align: left;
+  font-size: 0.5em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: none;
+}
+
+/* line 24, ../sass/_code.scss */
+.reveal code {
+  font-family: monospace;
+}
+
+/* line 28, ../sass/_code.scss */
+.reveal pre code {
+  display: block;
+  padding: 0.5em;
+  overflow: auto;
+  max-height: auto;
+  word-wrap: normal;
+}
+
+/* line 36, ../sass/_code.scss */
+.no-container > code {
+  background-color: transparent;
+}
+
+/* line 51, ../sass/_code.scss */
+.dark .reveal .hljs {
+  display: block;
+  padding: 0.5em;
+  background: #3f4e4f;
+  color: #dbe8ec;
+}
+/* line 57, ../sass/_code.scss */
+.dark .reveal .no-container > .hljs {
+  background-color: transparent;
+}
+/* line 61, ../sass/_code.scss */
+.dark .reveal .hljs-keyword,
+.dark .reveal .hljs-tag,
+.dark .reveal .css .hljs-class,
+.dark .reveal .css .hljs-id,
+.dark .reveal .lisp .hljs-title,
+.dark .reveal .nginx .hljs-title,
+.dark .reveal .hljs-request,
+.dark .reveal .hljs-status,
+.dark .reveal .clojure .hljs-attribute {
+  color: #E3CEAB;
+}
+/* line 73, ../sass/_code.scss */
+.dark .reveal .django .hljs-template_tag,
+.dark .reveal .django .hljs-variable,
+.dark .reveal .django .hljs-filter .hljs-argument {
+  color: #DCDCDC;
+}
+/* line 79, ../sass/_code.scss */
+.dark .reveal .hljs-number,
+.dark .reveal .hljs-date {
+  color: #8CD0D3;
+}
+/* line 84, ../sass/_code.scss */
+.dark .reveal .dos .hljs-envvar,
+.dark .reveal .dos .hljs-stream,
+.dark .reveal .hljs-variable,
+.dark .reveal .apache .hljs-sqbracket {
+  color: #EFDCBC;
+}
+/* line 91, ../sass/_code.scss */
+.dark .reveal .dos .hljs-flow,
+.dark .reveal .diff .hljs-change,
+.dark .reveal .python .exception,
+.dark .reveal .python .hljs-built_in,
+.dark .reveal .hljs-literal,
+.dark .reveal .tex .hljs-special {
+  color: #EFEFAF;
+}
+/* line 100, ../sass/_code.scss */
+.dark .reveal .diff .hljs-chunk,
+.dark .reveal .hljs-subst {
+  color: #8F8F8F;
+}
+/* line 105, ../sass/_code.scss */
+.dark .reveal .dos .hljs-keyword,
+.dark .reveal .python .hljs-decorator,
+.dark .reveal .hljs-title,
+.dark .reveal .haskell .hljs-type,
+.dark .reveal .diff .hljs-header,
+.dark .reveal .ruby .hljs-class .hljs-parent,
+.dark .reveal .apache .hljs-tag,
+.dark .reveal .nginx .hljs-built_in,
+.dark .reveal .tex .hljs-command,
+.dark .reveal .hljs-prompt {
+  color: #efef8f;
+}
+/* line 118, ../sass/_code.scss */
+.dark .reveal .dos .hljs-winutils,
+.dark .reveal .ruby .hljs-symbol,
+.dark .reveal .ruby .hljs-symbol .hljs-string,
+.dark .reveal .ruby .hljs-string {
+  color: #DCA3A3;
+}
+/* line 125, ../sass/_code.scss */
+.dark .reveal .diff .hljs-deletion,
+.dark .reveal .hljs-string,
+.dark .reveal .hljs-tag .hljs-value,
+.dark .reveal .hljs-preprocessor,
+.dark .reveal .hljs-pragma,
+.dark .reveal .hljs-built_in,
+.dark .reveal .sql .hljs-aggregate,
+.dark .reveal .hljs-javadoc,
+.dark .reveal .smalltalk .hljs-class,
+.dark .reveal .smalltalk .hljs-localvars,
+.dark .reveal .smalltalk .hljs-array,
+.dark .reveal .css .hljs-rules .hljs-value,
+.dark .reveal .hljs-attr_selector,
+.dark .reveal .hljs-pseudo,
+.dark .reveal .apache .hljs-cbracket,
+.dark .reveal .tex .hljs-formula,
+.dark .reveal .coffeescript .hljs-attribute {
+  color: #CC9393;
+}
+/* line 145, ../sass/_code.scss */
+.dark .reveal .hljs-shebang,
+.dark .reveal .diff .hljs-addition,
+.dark .reveal .hljs-comment,
+.dark .reveal .java .hljs-annotation,
+.dark .reveal .hljs-template_comment,
+.dark .reveal .hljs-pi,
+.dark .reveal .hljs-doctype {
+  color: #7F9F7F;
+}
+/* line 155, ../sass/_code.scss */
+.dark .reveal .coffeescript .javascript,
+.dark .reveal .javascript .xml,
+.dark .reveal .tex .hljs-formula,
+.dark .reveal .xml .javascript,
+.dark .reveal .xml .vbscript,
+.dark .reveal .xml .css,
+.dark .reveal .xml .hljs-cdata {
+  opacity: 0.5;
+}
+
+/* line 168, ../sass/_code.scss */
+.light .reveal .hljs {
+  display: block;
+  padding: 0.5em;
+  background: #ecf3f5;
+  color: #344041;
+}
+/* line 174, ../sass/_code.scss */
+.light .reveal .no-container > .hljs {
+  background-color: transparent;
+}
+/* line 178, ../sass/_code.scss */
+.light .reveal .hljs-keyword,
+.light .reveal .hljs-tag,
+.light .reveal .css .hljs-class,
+.light .reveal .css .hljs-id,
+.light .reveal .lisp .hljs-title,
+.light .reveal .nginx .hljs-title,
+.light .reveal .hljs-request,
+.light .reveal .hljs-status,
+.light .reveal .clojure .hljs-attribute {
+  color: #B34A00;
+}
+/* line 191, ../sass/_code.scss */
+.light .reveal .django .hljs-template_tag,
+.light .reveal .django .hljs-variable,
+.light .reveal .django .hljs-filter .hljs-argument {
+  color: #9F3864;
+}
+/* line 198, ../sass/_code.scss */
+.light .reveal .hljs-number,
+.light .reveal .hljs-date {
+  color: #167A7E;
+}
+/* line 204, ../sass/_code.scss */
+.light .reveal .dos .hljs-envvar,
+.light .reveal .dos .hljs-stream,
+.light .reveal .hljs-variable,
+.light .reveal .apache .hljs-sqbracket {
+  color: #114D97;
+}
+/* line 212, ../sass/_code.scss */
+.light .reveal .dos .hljs-flow,
+.light .reveal .diff .hljs-change,
+.light .reveal .python .exception,
+.light .reveal .python .hljs-built_in,
+.light .reveal .hljs-literal,
+.light .reveal .tex .hljs-special {
+  color: #307506;
+}
+/* line 222, ../sass/_code.scss */
+.light .reveal .diff .hljs-chunk,
+.light .reveal .hljs-subst {
+  color: #828282;
+}
+/* line 228, ../sass/_code.scss */
+.light .reveal .dos .hljs-keyword,
+.light .reveal .python .hljs-decorator,
+.light .reveal .hljs-title,
+.light .reveal .haskell .hljs-type,
+.light .reveal .diff .hljs-header,
+.light .reveal .ruby .hljs-class .hljs-parent,
+.light .reveal .apache .hljs-tag,
+.light .reveal .nginx .hljs-built_in,
+.light .reveal .tex .hljs-command,
+.light .reveal .hljs-prompt {
+  color: #BA0864;
+}
+/* line 242, ../sass/_code.scss */
+.light .reveal .dos .hljs-winutils,
+.light .reveal .ruby .hljs-symbol,
+.light .reveal .ruby .hljs-symbol .hljs-string,
+.light .reveal .ruby .hljs-string {
+  color: #B22424;
+}
+/* line 250, ../sass/_code.scss */
+.light .reveal .diff .hljs-deletion,
+.light .reveal .hljs-string,
+.light .reveal .hljs-tag .hljs-value,
+.light .reveal .hljs-preprocessor,
+.light .reveal .hljs-pragma,
+.light .reveal .hljs-built_in,
+.light .reveal .sql .hljs-aggregate,
+.light .reveal .hljs-javadoc,
+.light .reveal .smalltalk .hljs-class,
+.light .reveal .smalltalk .hljs-localvars,
+.light .reveal .smalltalk .hljs-array,
+.light .reveal .css .hljs-rules .hljs-value,
+.light .reveal .hljs-attr_selector,
+.light .reveal .hljs-pseudo,
+.light .reveal .apache .hljs-cbracket,
+.light .reveal .tex .hljs-formula,
+.light .reveal .coffeescript .hljs-attribute {
+  color: #DB0000;
+}
+/* line 271, ../sass/_code.scss */
+.light .reveal .hljs-shebang,
+.light .reveal .diff .hljs-addition,
+.light .reveal .hljs-comment,
+.light .reveal .java .hljs-annotation,
+.light .reveal .hljs-template_comment,
+.light .reveal .hljs-pi,
+.light .reveal .hljs-doctype {
+  color: #660DA5;
+}
+/* line 282, ../sass/_code.scss */
+.light .reveal .coffeescript .javascript,
+.light .reveal .javascript .xml,
+.light .reveal .tex .hljs-formula,
+.light .reveal .xml .javascript,
+.light .reveal .xml .vbscript,
+.light .reveal .xml .css,
+.light .reveal .xml .hljs-cdata {
+  opacity: 0.5;
+}
+
 /**
  * @file
  * Style rules for general additional classes.
@@ -2023,7 +2321,145 @@ body {
   z-index: 9999;
 }
 /* line 14, ../sass/_general.scss */
-.logo img {
-  width: 150px;
-  padding: 0 0 1em 1em;
+.logo p {
+  position: absolute;
+  left: -999px;
+  color: transparent;
+}
+/* line 20, ../sass/_general.scss */
+.logo:after {
+  content: " ";
+  display: block;
+  width: 200px;
+  height: 32px;
+  margin: 0 0 1em 1em;
+}
+
+/* line 29, ../sass/_general.scss */
+.dark .reveal {
+  color: #dbe8ec;
+}
+/* line 32, ../sass/_general.scss */
+.dark .reveal .logo:after {
+  background: url(../imgs/palantirnet-logo--reversed.svg);
+}
+
+/* line 37, ../sass/_general.scss */
+.light .reveal {
+  color: #344041;
+}
+/* line 40, ../sass/_general.scss */
+.light .reveal .logo:after {
+  background: url(../imgs/palantirnet-logo.svg);
+}
+
+/* line 45, ../sass/_general.scss */
+.l-2up > div {
+  margin-bottom: 15px;
+}
+@media (min-width: 600px) {
+  /* line 45, ../sass/_general.scss */
+  .l-2up > div {
+    width: 48%;
+    margin-bottom: 0;
+    text-align: left;
+    float: left;
+    font-size: 0.85em;
+  }
+  /* line 54, ../sass/_general.scss */
+  .l-2up > div:nth-of-type(1n) {
+    padding-right: 2%;
+    padding-left: 0;
+  }
+  /* line 59, ../sass/_general.scss */
+  .l-2up > div:nth-of-type(2n) {
+    padding-right: 0;
+    padding-left: 2%;
+  }
+}
+
+/* line 66, ../sass/_general.scss */
+.l-3up > div {
+  margin-bottom: 15px;
+}
+@media (min-width: 750px) {
+  /* line 66, ../sass/_general.scss */
+  .l-3up > div {
+    width: 31%;
+    margin-bottom: 0;
+    text-align: left;
+    float: left;
+    font-size: 0.7em;
+  }
+  /* line 76, ../sass/_general.scss */
+  .l-3up > div:nth-of-type(1n) {
+    padding-right: 2%;
+    padding-left: 0;
+  }
+  /* line 81, ../sass/_general.scss */
+  .l-3up > div:nth-of-type(2n) {
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+  /* line 86, ../sass/_general.scss */
+  .l-3up > div:nth-of-type(3n) {
+    padding-right: 0;
+    padding-left: 2%;
+  }
+}
+
+/* line 93, ../sass/_general.scss */
+.l-4up > div {
+  margin-bottom: 15px;
+}
+@media (min-width: 900px) {
+  /* line 93, ../sass/_general.scss */
+  .l-4up > div {
+    width: 23%;
+    margin-bottom: 0;
+    text-align: left;
+    float: left;
+    font-size: 0.5em;
+  }
+  /* line 103, ../sass/_general.scss */
+  .l-4up > div:nth-of-type(1n) {
+    padding-right: 2%;
+    padding-left: 0;
+  }
+  /* line 108, ../sass/_general.scss */
+  .l-4up > div:nth-of-type(2n) {
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+  /* line 113, ../sass/_general.scss */
+  .l-4up > div:nth-of-type(3n) {
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+  /* line 118, ../sass/_general.scss */
+  .l-4up > div:nth-of-type(4n) {
+    padding-right: 0;
+    padding-left: 2%;
+  }
+}
+
+/* line 126, ../sass/_general.scss */
+.reveal .attribute {
+  font-size: 0.5em;
+  color: #7f9aa0;
+  position: relative;
+  top: -2.8em;
+}
+
+/*********************************************
+ * AD HOC CUSTOM CLASSES (Originally by Larry)
+ *********************************************/
+/* line 137, ../sass/_general.scss */
+p.bigtext {
+  font-size: 150%;
+}
+
+/* line 142, ../sass/_general.scss */
+.reveal ul + p, .reveal div + p {
+  margin-top: 1em;
 }
