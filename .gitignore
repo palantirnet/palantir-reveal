@@ -8,7 +8,6 @@ css/reveal.min.css
 js/reveal.min.js
 .travis.yml
 Gruntfile.js
-js
 lib
 LICENSE
 node_modules
