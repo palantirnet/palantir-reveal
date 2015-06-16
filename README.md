@@ -56,7 +56,7 @@ The default font size is 15px. Pre-baked font classes include "font--12", "font-
 ### Have your code break rather than scroll right
   1. Open your index.html file in the root.
   2. Find the code that you want to break rather than to scroll.
-  3. Add "style="word-wrap: break-word;" to your <code> opening tag.
+  3. Add "style="word-wrap: break-word;" to your &#060;code&gt; opening tag.
   <small>An example of this can be seen on line 248 of the included index.html</small>
   4. Save your file.
 
@@ -68,7 +68,6 @@ This will change your default scaling aspect ratio and your max height/width for
     * for 16:9 recommended to set width to 1500 and height to 844.
     * for 4:3 recommended to set width to 1200 and height to 900.
     * or choose a custom aspect ratio that best fits your screen.
-
   3. Save your file and serve your presentation.
 
 ### Add or Remove Margin from your slides container.
