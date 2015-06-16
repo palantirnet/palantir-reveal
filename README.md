@@ -85,16 +85,15 @@ This provides the option of having 2 column, 3 column, or 4 column layouts on yo
   3. on the section tag, add the class "l-2up" for a 2 column layout, "l-3up" for a 3 column layout, or "l-4up" for a 4 column layout.
   4. Create 2, 3, or 4 divs depending on the layout you chose and add content to each div. The class is directly targeting child divs of the section, so you can have additional divs within your wrapper div.
 
-  #### Examples:
+  #### Examples
   Additionally, an inline example of the 4up can be seen starting on [line 40](https://github.com/palantirnet/palantir-reveal/blob/master/index.html#L40-L61)
-
-    1. Two Column Grid
+   1. Two Column Grid
     <pre>
     &#060;section class="l-2up"&gt;
         &#060;div&gt; This is your first column of content &#060;/div&gt;
     &#060;div&gt; This is your second column of content &#060;/div&gt;
     </pre>
-    2. Three Column Grid
+   2. Three Column Grid
     <pre>
     &#060;section class="l-3up"&gt;
         &#060;div&gt; This is your first column of content &#060;/div&gt;
@@ -102,7 +101,7 @@ This provides the option of having 2 column, 3 column, or 4 column layouts on yo
         &#060;div&gt; This is your third column of content &#060;/div&gt;
     &#060;/section&gt;
     </pre>
-    3. Four Column Grid
+   3. Four Column Grid
     <pre>
     &#060;section class="l-4up"&gt;
         &#060;div&gt; This is your first column of content &#060;/div&gt;
