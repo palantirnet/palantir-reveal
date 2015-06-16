@@ -12,8 +12,8 @@ Use this repository when creating a slide deck to present at conferences if you 
 
 1. Install Reveal.js by following the instructions here: https://github.com/hakimel/reveal.js
 2. Pull down this repo and place the contents in the root of your Reveal.js directory, replacing the index file from that repo with the index file from this repository.
-3. Install breakpoint: http://breakpoint-sass.com/
-4. Edit the html within the index file to contain the content for your presentation.
+3. If you plan to write or modify the sass, install breakpoint: http://breakpoint-sass.com/
+4. Edit the html within the index file to contain the content for your presentation, be careful to only edit within "<div class="slides"> </div>", and the title and author metadata of course.
 4. Follow the rest of the instructions from the Reveal.js readme to serve your slide deck.
 
 -----
@@ -38,9 +38,27 @@ This will remove the background color from a code sample.
  Your Code here
 &#060;/pre&gt;
 </pre>
-<small>An example of this can be seen on line 227 of the included index.html</small>
-
+<small>An example of this can be seen on line 248 of the included index.html</small>
   3. Save your file.
+
+### Change the font size of your code.
+Pre-baked font classes include "font--12", "font--14", "font--16", "font--18", "font--20", "font--24", and "font--30".
+  1. Open your index.html file in the root.
+  2. Wherever you are inputting the code, add the appropriate class to the pre tag around the code you'd like to change the font size for. Example:
+<pre>
+&#060;pre class="font--12"&gt;
+ Your Code here
+&#060;/pre&gt;
+</pre>
+<small>An example of this can be seen on line 248 of the included index.html</small>
+  3. Save your file.
+
+### Have your code break rather than scroll right
+  1. Open your index.html file in the root.
+  2. Find the code that you want to break rather than to scroll.
+  3. Add "style="word-wrap: break-word;" to your <code> opening tag.
+  <small>An example of this can be seen on line 248 of the included index.html</small>
+  4. Save your file.
 
 ### Change your slide aspect ratio.
 This will change your default scaling aspect ratio and your max height/width for your slide container. This change is global and will affect all slides.
