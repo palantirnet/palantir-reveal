@@ -99,7 +99,7 @@ This provides the option of having 2 column, 3 column, or 4 column layouts on yo
       &#060;div&gt; This is your third column of content &#060;/div&gt;
   &#060;/section&gt;
   </pre>
-   3. Four Column Grid
+  3. Four Column Grid
   <pre>
   &#060;section class="l-4up"&gt;
       &#060;div&gt; This is your first column of content &#060;/div&gt;
