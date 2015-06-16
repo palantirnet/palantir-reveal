@@ -42,7 +42,7 @@ This will remove the background color from a code sample.
   3. Save your file.
 
 ### Change the font size of your code.
-Pre-baked font classes include "font--12", "font--14", "font--16", "font--18", "font--20", "font--24", and "font--30".
+The default font size is 15px. Pre-baked font classes include "font--12", "font--14", "font--16", "font--18", "font--20", "font--24", and "font--30". All font classes are measured in pixels, so be sure your aspect ratio is set correctly before you adjust font sizes.
   1. Open your index.html file in the root.
   2. Wherever you are inputting the code, add the appropriate class to the pre tag around the code you'd like to change the font size for. Example:
 <pre>
