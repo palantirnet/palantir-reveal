@@ -10,7 +10,6 @@
   position: relative;
   width: 100%;
   margin: $blockMargin auto;
-
   text-align: left;
   font-size: 0.5em;
   font-family: monospace;
@@ -19,7 +18,34 @@
   word-wrap: break-word;
 
   box-shadow: none;
+
+
+  &.font--8 {
+    font-size: 8px;
+  }
+  &.font--12 {
+    font-size: 12px;
+  }
+  &.font--14 {
+    font-size: 14px;
+  }
+  &.font--16 {
+    font-size: 16px;
+  }
+  &.font--18 {
+    font-size: 18px;
+  }
+  &.font--20 {
+    font-size: 20px;
+  }
+  &.font--24 {
+    font-size: 24px;
+  }
+  &.font--30 {
+    font-size: 30px;
+  }
 }
+
 
 .reveal code {
   font-family: monospace;

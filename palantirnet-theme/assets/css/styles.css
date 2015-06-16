@@ -1689,7 +1689,7 @@ body.dark {
 .reveal h2,
 .reveal h3 {
   margin: 0.15em 0 0.35em;
-  font-family: "proxima-nova-cond", sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-weight: 600;
   line-height: 1;
   letter-spacing: normal;
@@ -1700,16 +1700,15 @@ body.dark {
 /* line 78, ../sass/_theme.scss */
 .reveal h1 {
   margin: 0.15em 0 0.2em;
-  letter-spacing: -1px;
 }
 
-/* line 84, ../sass/_theme.scss */
+/* line 83, ../sass/_theme.scss */
 .reveal h4 {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
-/* line 90, ../sass/_theme.scss */
+/* line 89, ../sass/_theme.scss */
 .reveal h5,
 .reveal h6 {
   text-transform: uppercase;
@@ -1717,22 +1716,22 @@ body.dark {
   letter-spacing: 3px;
 }
 
-/* line 98, ../sass/_theme.scss */
+/* line 97, ../sass/_theme.scss */
 .reveal h1 {
   font-size: 3.25em;
 }
 
-/* line 99, ../sass/_theme.scss */
+/* line 98, ../sass/_theme.scss */
 .reveal h2 {
   font-size: 2em;
 }
 
-/* line 100, ../sass/_theme.scss */
+/* line 99, ../sass/_theme.scss */
 .reveal h3 {
   font-size: 1.5em;
 }
 
-/* line 101, ../sass/_theme.scss */
+/* line 100, ../sass/_theme.scss */
 .reveal h4 {
   font-size: 1em;
 }
@@ -1740,14 +1739,14 @@ body.dark {
 /*********************************************
  * OTHER
  *********************************************/
-/* line 108, ../sass/_theme.scss */
+/* line 107, ../sass/_theme.scss */
 .reveal p {
   margin: 0.25em 0;
   line-height: 1.3;
 }
 
 /* Ensure certain elements are never larger than the slide itself */
-/* line 114, ../sass/_theme.scss */
+/* line 113, ../sass/_theme.scss */
 .reveal img,
 .reveal video,
 .reveal iframe {
@@ -1755,18 +1754,18 @@ body.dark {
   max-height: 95%;
 }
 
-/* line 120, ../sass/_theme.scss */
+/* line 119, ../sass/_theme.scss */
 .reveal strong,
 .reveal b {
   font-weight: bold;
 }
 
-/* line 125, ../sass/_theme.scss */
+/* line 124, ../sass/_theme.scss */
 .reveal em {
   font-style: italic;
 }
 
-/* line 129, ../sass/_theme.scss */
+/* line 128, ../sass/_theme.scss */
 .reveal ol,
 .reveal dl,
 .reveal ul {
@@ -1775,27 +1774,27 @@ body.dark {
   margin: 0 0 0 1em;
 }
 
-/* line 138, ../sass/_theme.scss */
+/* line 137, ../sass/_theme.scss */
 .reveal ol {
   list-style-type: decimal;
 }
 
-/* line 142, ../sass/_theme.scss */
+/* line 141, ../sass/_theme.scss */
 .reveal ul {
   list-style-type: disc;
 }
 
-/* line 146, ../sass/_theme.scss */
+/* line 145, ../sass/_theme.scss */
 .reveal ul ul {
   list-style-type: square;
 }
 
-/* line 150, ../sass/_theme.scss */
+/* line 149, ../sass/_theme.scss */
 .reveal ul ul ul {
   list-style-type: circle;
 }
 
-/* line 154, ../sass/_theme.scss */
+/* line 153, ../sass/_theme.scss */
 .reveal ul ul,
 .reveal ul ol,
 .reveal ol ol,
@@ -1804,17 +1803,17 @@ body.dark {
   margin-left: 40px;
 }
 
-/* line 162, ../sass/_theme.scss */
+/* line 161, ../sass/_theme.scss */
 .reveal dt {
   font-weight: bold;
 }
 
-/* line 166, ../sass/_theme.scss */
+/* line 165, ../sass/_theme.scss */
 .reveal dd {
   margin-left: 40px;
 }
 
-/* line 170, ../sass/_theme.scss */
+/* line 169, ../sass/_theme.scss */
 .reveal blockquote {
   display: block;
   position: relative;
@@ -1832,38 +1831,38 @@ body.dark {
   border-bottom: 1px dotted #11a9a1;
 }
 
-/* line 187, ../sass/_theme.scss */
+/* line 186, ../sass/_theme.scss */
 .reveal blockquote p:first-child,
 .reveal blockquote p:last-child {
   display: inline-block;
 }
 
-/* line 192, ../sass/_theme.scss */
+/* line 191, ../sass/_theme.scss */
 .reveal q {
   font-style: italic;
 }
-/* line 195, ../sass/_theme.scss */
+/* line 194, ../sass/_theme.scss */
 .reveal q:before {
   content: '\201C';
 }
-/* line 199, ../sass/_theme.scss */
+/* line 198, ../sass/_theme.scss */
 .reveal q:after {
   content: '\201D';
 }
 
-/* line 204, ../sass/_theme.scss */
+/* line 203, ../sass/_theme.scss */
 .reveal table {
   margin: auto;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 210, ../sass/_theme.scss */
+/* line 209, ../sass/_theme.scss */
 .reveal table th {
   font-weight: bold;
 }
 
-/* line 214, ../sass/_theme.scss */
+/* line 213, ../sass/_theme.scss */
 .reveal table th,
 .reveal table td {
   text-align: left;
@@ -1871,34 +1870,34 @@ body.dark {
   border-bottom: 1px solid;
 }
 
-/* line 221, ../sass/_theme.scss */
+/* line 220, ../sass/_theme.scss */
 .reveal table th[align="center"],
 .reveal table td[align="center"] {
   text-align: center;
 }
 
-/* line 226, ../sass/_theme.scss */
+/* line 225, ../sass/_theme.scss */
 .reveal table th[align="right"],
 .reveal table td[align="right"] {
   text-align: right;
 }
 
-/* line 231, ../sass/_theme.scss */
+/* line 230, ../sass/_theme.scss */
 .reveal table tr:last-child td {
   border-bottom: none;
 }
 
-/* line 235, ../sass/_theme.scss */
+/* line 234, ../sass/_theme.scss */
 .reveal sup {
   vertical-align: super;
 }
 
-/* line 238, ../sass/_theme.scss */
+/* line 237, ../sass/_theme.scss */
 .reveal sub {
   vertical-align: sub;
 }
 
-/* line 242, ../sass/_theme.scss */
+/* line 241, ../sass/_theme.scss */
 .reveal small {
   display: inline-block;
   font-size: 0.6em;
@@ -1906,7 +1905,7 @@ body.dark {
   vertical-align: top;
 }
 
-/* line 249, ../sass/_theme.scss */
+/* line 248, ../sass/_theme.scss */
 .reveal small * {
   vertical-align: top;
 }
@@ -1914,7 +1913,7 @@ body.dark {
 /*********************************************
  * LINKS
  *********************************************/
-/* line 258, ../sass/_theme.scss */
+/* line 257, ../sass/_theme.scss */
 .reveal a {
   color: #11a9a1;
   text-decoration: none;
@@ -1923,14 +1922,14 @@ body.dark {
   transition: color .15s ease;
 }
 
-/* line 266, ../sass/_theme.scss */
+/* line 265, ../sass/_theme.scss */
 .reveal a:hover {
   color: #0c7b75;
   text-shadow: none;
   border: none;
 }
 
-/* line 273, ../sass/_theme.scss */
+/* line 272, ../sass/_theme.scss */
 .reveal .roll span:after {
   color: #fff;
   background: #0a635f;
@@ -1939,7 +1938,7 @@ body.dark {
 /*********************************************
  * IMAGES
  *********************************************/
-/* line 283, ../sass/_theme.scss */
+/* line 282, ../sass/_theme.scss */
 .reveal section img {
   margin: 15px 0px;
   background: none;
@@ -1947,14 +1946,14 @@ body.dark {
   box-shadow: none;
 }
 
-/* line 291, ../sass/_theme.scss */
+/* line 290, ../sass/_theme.scss */
 .reveal a img {
   -webkit-transition: all .15s linear;
   -moz-transition: all .15s linear;
   transition: all .15s linear;
 }
 
-/* line 297, ../sass/_theme.scss */
+/* line 296, ../sass/_theme.scss */
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
   border-color: #11a9a1;
@@ -1964,46 +1963,46 @@ body.dark {
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
-/* line 309, ../sass/_theme.scss */
+/* line 308, ../sass/_theme.scss */
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
   border-right-color: #11a9a1;
 }
 
-/* line 314, ../sass/_theme.scss */
+/* line 313, ../sass/_theme.scss */
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
   border-left-color: #11a9a1;
 }
 
-/* line 319, ../sass/_theme.scss */
+/* line 318, ../sass/_theme.scss */
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
   border-bottom-color: #11a9a1;
 }
 
-/* line 324, ../sass/_theme.scss */
+/* line 323, ../sass/_theme.scss */
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
   border-top-color: #11a9a1;
 }
 
-/* line 329, ../sass/_theme.scss */
+/* line 328, ../sass/_theme.scss */
 .reveal .controls div.navigate-left.enabled:hover {
   border-right-color: #0c7b75;
 }
 
-/* line 333, ../sass/_theme.scss */
+/* line 332, ../sass/_theme.scss */
 .reveal .controls div.navigate-right.enabled:hover {
   border-left-color: #0c7b75;
 }
 
-/* line 337, ../sass/_theme.scss */
+/* line 336, ../sass/_theme.scss */
 .reveal .controls div.navigate-up.enabled:hover {
   border-bottom-color: #0c7b75;
 }
 
-/* line 341, ../sass/_theme.scss */
+/* line 340, ../sass/_theme.scss */
 .reveal .controls div.navigate-down.enabled:hover {
   border-top-color: #0c7b75;
 }
@@ -2011,12 +2010,12 @@ body.dark {
 /*********************************************
  * PROGRESS BAR
  *********************************************/
-/* line 350, ../sass/_theme.scss */
+/* line 349, ../sass/_theme.scss */
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 353, ../sass/_theme.scss */
+/* line 352, ../sass/_theme.scss */
 .reveal .progress span {
   background: #11a9a1;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -2027,7 +2026,7 @@ body.dark {
 /*********************************************
  * SLIDE NUMBER
  *********************************************/
-/* line 364, ../sass/_theme.scss */
+/* line 363, ../sass/_theme.scss */
 .reveal .slide-number {
   color: #11a9a1;
 }
@@ -2051,13 +2050,45 @@ body.dark {
   word-wrap: break-word;
   box-shadow: none;
 }
+/* line 23, ../sass/_code.scss */
+.reveal pre.font--8 {
+  font-size: 8px;
+}
+/* line 26, ../sass/_code.scss */
+.reveal pre.font--12 {
+  font-size: 12px;
+}
+/* line 29, ../sass/_code.scss */
+.reveal pre.font--14 {
+  font-size: 14px;
+}
+/* line 32, ../sass/_code.scss */
+.reveal pre.font--16 {
+  font-size: 16px;
+}
+/* line 35, ../sass/_code.scss */
+.reveal pre.font--18 {
+  font-size: 18px;
+}
+/* line 38, ../sass/_code.scss */
+.reveal pre.font--20 {
+  font-size: 20px;
+}
+/* line 41, ../sass/_code.scss */
+.reveal pre.font--24 {
+  font-size: 24px;
+}
+/* line 44, ../sass/_code.scss */
+.reveal pre.font--30 {
+  font-size: 30px;
+}
 
-/* line 24, ../sass/_code.scss */
+/* line 50, ../sass/_code.scss */
 .reveal code {
   font-family: monospace;
 }
 
-/* line 28, ../sass/_code.scss */
+/* line 54, ../sass/_code.scss */
 .reveal pre code {
   display: block;
   padding: 0.5em;
@@ -2066,23 +2097,23 @@ body.dark {
   word-wrap: normal;
 }
 
-/* line 36, ../sass/_code.scss */
+/* line 62, ../sass/_code.scss */
 .no-container > code {
   background-color: transparent;
 }
 
-/* line 51, ../sass/_code.scss */
+/* line 77, ../sass/_code.scss */
 .dark .reveal .hljs {
   display: block;
   padding: 0.5em;
   background: #3f4e4f;
   color: #dbe8ec;
 }
-/* line 57, ../sass/_code.scss */
+/* line 83, ../sass/_code.scss */
 .dark .reveal .no-container > .hljs {
   background-color: transparent;
 }
-/* line 61, ../sass/_code.scss */
+/* line 87, ../sass/_code.scss */
 .dark .reveal .hljs-keyword,
 .dark .reveal .hljs-tag,
 .dark .reveal .css .hljs-class,
@@ -2094,25 +2125,25 @@ body.dark {
 .dark .reveal .clojure .hljs-attribute {
   color: #E3CEAB;
 }
-/* line 73, ../sass/_code.scss */
+/* line 99, ../sass/_code.scss */
 .dark .reveal .django .hljs-template_tag,
 .dark .reveal .django .hljs-variable,
 .dark .reveal .django .hljs-filter .hljs-argument {
   color: #DCDCDC;
 }
-/* line 79, ../sass/_code.scss */
+/* line 105, ../sass/_code.scss */
 .dark .reveal .hljs-number,
 .dark .reveal .hljs-date {
   color: #8CD0D3;
 }
-/* line 84, ../sass/_code.scss */
+/* line 110, ../sass/_code.scss */
 .dark .reveal .dos .hljs-envvar,
 .dark .reveal .dos .hljs-stream,
 .dark .reveal .hljs-variable,
 .dark .reveal .apache .hljs-sqbracket {
   color: #EFDCBC;
 }
-/* line 91, ../sass/_code.scss */
+/* line 117, ../sass/_code.scss */
 .dark .reveal .dos .hljs-flow,
 .dark .reveal .diff .hljs-change,
 .dark .reveal .python .exception,
@@ -2121,12 +2152,12 @@ body.dark {
 .dark .reveal .tex .hljs-special {
   color: #EFEFAF;
 }
-/* line 100, ../sass/_code.scss */
+/* line 126, ../sass/_code.scss */
 .dark .reveal .diff .hljs-chunk,
 .dark .reveal .hljs-subst {
   color: #8F8F8F;
 }
-/* line 105, ../sass/_code.scss */
+/* line 131, ../sass/_code.scss */
 .dark .reveal .dos .hljs-keyword,
 .dark .reveal .python .hljs-decorator,
 .dark .reveal .hljs-title,
@@ -2139,14 +2170,14 @@ body.dark {
 .dark .reveal .hljs-prompt {
   color: #efef8f;
 }
-/* line 118, ../sass/_code.scss */
+/* line 144, ../sass/_code.scss */
 .dark .reveal .dos .hljs-winutils,
 .dark .reveal .ruby .hljs-symbol,
 .dark .reveal .ruby .hljs-symbol .hljs-string,
 .dark .reveal .ruby .hljs-string {
   color: #DCA3A3;
 }
-/* line 125, ../sass/_code.scss */
+/* line 151, ../sass/_code.scss */
 .dark .reveal .diff .hljs-deletion,
 .dark .reveal .hljs-string,
 .dark .reveal .hljs-tag .hljs-value,
@@ -2166,7 +2197,7 @@ body.dark {
 .dark .reveal .coffeescript .hljs-attribute {
   color: #CC9393;
 }
-/* line 145, ../sass/_code.scss */
+/* line 171, ../sass/_code.scss */
 .dark .reveal .hljs-shebang,
 .dark .reveal .diff .hljs-addition,
 .dark .reveal .hljs-comment,
@@ -2176,7 +2207,7 @@ body.dark {
 .dark .reveal .hljs-doctype {
   color: #7F9F7F;
 }
-/* line 155, ../sass/_code.scss */
+/* line 181, ../sass/_code.scss */
 .dark .reveal .coffeescript .javascript,
 .dark .reveal .javascript .xml,
 .dark .reveal .tex .hljs-formula,
@@ -2187,18 +2218,18 @@ body.dark {
   opacity: 0.5;
 }
 
-/* line 168, ../sass/_code.scss */
+/* line 194, ../sass/_code.scss */
 .light .reveal .hljs {
   display: block;
   padding: 0.5em;
   background: #ecf3f5;
   color: #344041;
 }
-/* line 174, ../sass/_code.scss */
+/* line 200, ../sass/_code.scss */
 .light .reveal .no-container > .hljs {
   background-color: transparent;
 }
-/* line 178, ../sass/_code.scss */
+/* line 204, ../sass/_code.scss */
 .light .reveal .hljs-keyword,
 .light .reveal .hljs-tag,
 .light .reveal .css .hljs-class,
@@ -2210,25 +2241,25 @@ body.dark {
 .light .reveal .clojure .hljs-attribute {
   color: #B34A00;
 }
-/* line 191, ../sass/_code.scss */
+/* line 217, ../sass/_code.scss */
 .light .reveal .django .hljs-template_tag,
 .light .reveal .django .hljs-variable,
 .light .reveal .django .hljs-filter .hljs-argument {
   color: #9F3864;
 }
-/* line 198, ../sass/_code.scss */
+/* line 224, ../sass/_code.scss */
 .light .reveal .hljs-number,
 .light .reveal .hljs-date {
   color: #167A7E;
 }
-/* line 204, ../sass/_code.scss */
+/* line 230, ../sass/_code.scss */
 .light .reveal .dos .hljs-envvar,
 .light .reveal .dos .hljs-stream,
 .light .reveal .hljs-variable,
 .light .reveal .apache .hljs-sqbracket {
   color: #114D97;
 }
-/* line 212, ../sass/_code.scss */
+/* line 238, ../sass/_code.scss */
 .light .reveal .dos .hljs-flow,
 .light .reveal .diff .hljs-change,
 .light .reveal .python .exception,
@@ -2237,12 +2268,12 @@ body.dark {
 .light .reveal .tex .hljs-special {
   color: #307506;
 }
-/* line 222, ../sass/_code.scss */
+/* line 248, ../sass/_code.scss */
 .light .reveal .diff .hljs-chunk,
 .light .reveal .hljs-subst {
   color: #828282;
 }
-/* line 228, ../sass/_code.scss */
+/* line 254, ../sass/_code.scss */
 .light .reveal .dos .hljs-keyword,
 .light .reveal .python .hljs-decorator,
 .light .reveal .hljs-title,
@@ -2255,14 +2286,14 @@ body.dark {
 .light .reveal .hljs-prompt {
   color: #BA0864;
 }
-/* line 242, ../sass/_code.scss */
+/* line 268, ../sass/_code.scss */
 .light .reveal .dos .hljs-winutils,
 .light .reveal .ruby .hljs-symbol,
 .light .reveal .ruby .hljs-symbol .hljs-string,
 .light .reveal .ruby .hljs-string {
   color: #B22424;
 }
-/* line 250, ../sass/_code.scss */
+/* line 276, ../sass/_code.scss */
 .light .reveal .diff .hljs-deletion,
 .light .reveal .hljs-string,
 .light .reveal .hljs-tag .hljs-value,
@@ -2282,7 +2313,7 @@ body.dark {
 .light .reveal .coffeescript .hljs-attribute {
   color: #DB0000;
 }
-/* line 271, ../sass/_code.scss */
+/* line 297, ../sass/_code.scss */
 .light .reveal .hljs-shebang,
 .light .reveal .diff .hljs-addition,
 .light .reveal .hljs-comment,
@@ -2292,7 +2323,7 @@ body.dark {
 .light .reveal .hljs-doctype {
   color: #660DA5;
 }
-/* line 282, ../sass/_code.scss */
+/* line 308, ../sass/_code.scss */
 .light .reveal .coffeescript .javascript,
 .light .reveal .javascript .xml,
 .light .reveal .tex .hljs-formula,
