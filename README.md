@@ -91,7 +91,8 @@ This provides the option of having 2 column, 3 column, or 4 column layouts on yo
     <pre>
     &#060;section class="l-2up"&gt;
         &#060;div&gt; This is your first column of content &#060;/div&gt;
-    &#060;div&gt; This is your second column of content &#060;/div&gt;
+        &#060;div&gt; This is your second column of content &#060;/div&gt;
+    &#060;/section&gt;
     </pre>
    2. Three Column Grid
     <pre>
