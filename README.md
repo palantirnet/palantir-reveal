@@ -21,9 +21,9 @@ Use this repository when creating a slide deck to present at conferences if you 
 ## Options
 
 ### Change Theme Color Scheme
-This will switch background colors, change out logos, and change your code syntax highlighting. There is a light and a dark option available.
+This will switch background colors, change out logos, and change your code syntax highlighting. There is a light and a dark option available, as well as the light option with a white background.
   1. Open your index.html file in the root.
-  2. On [line 26](https://github.com/palantirnet/palantir-reveal/blob/master/index.html#L26) change the class on the body tag from "light" to "dark", or vice versa
+  2. On [line 26](https://github.com/palantirnet/palantir-reveal/blob/master/index.html#L26) change the class on the body tag to "light", "dark", or "white".
   <pre>
   &#060;body class="light"&gt;
     Slide content here
