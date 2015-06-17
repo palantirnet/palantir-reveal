@@ -9,6 +9,11 @@ body.light {
 	background-color: $lt-gray;
 }
 
+body.white {
+	@include bodyBackground();
+	background-color: white;
+}
+
 body.dark {
 	@include bodyBackground();
 	background-color: $dk-gray;
@@ -40,6 +45,8 @@ body.dark {
 /*********************************************
  * HEADERS
  *********************************************/
+
+.white,
 .light {
 	.reveal h1,
 	.reveal h2,
