@@ -115,4 +115,4 @@ This provides the option of having 2 column, 3 column, or 4 column layouts on yo
 -----
 ## License
 
-Copyright (C) 2015 Palantir.net. All rights reserved. http://palantir.net/
+Copyright (C) 2015 Palantir.net. All rights reserved. http://www.palantir.net/
