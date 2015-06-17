@@ -11,7 +11,7 @@ Use this repository when creating a slide deck to present at conferences if you 
 ## How to Use
 
 1. Install Reveal.js by following the instructions here: https://github.com/hakimel/reveal.js
-2. Pull down this repo and place the contents in the root of your Reveal.js directory, replacing the index file from that repo with the index file from this repository.
+2. Pull down this repo and place the contents in the root of your Reveal.js directory, replacing the index file from that repo with the index file from this repository. WARNING: If you have already written out your slide content in the reveal repository, make sure that you save that content and don't overwrite it by replacing the index file.
 3. If you plan to write or modify the sass, install breakpoint: http://breakpoint-sass.com/
 4. Update the Title, Author, and Description metadata in the head of the index.html file.
 4. Edit the html within the index file to contain the content for your presentation. Place your slide content within "&#060;div class="slides"&gt; Your Slides Here! &#060;/div&gt;".
