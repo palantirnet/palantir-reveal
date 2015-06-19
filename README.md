@@ -73,7 +73,7 @@ This will change your default scaling aspect ratio and your max height/width for
 
 ### Add or Remove Margin from your slides container.
 This will change the default left and right margin for your slides container. This however, will not change the max-width of your container.
-  1. Open /assets/js/reveal.js file in the root.
+  1. Open js/reveal.js file in the root.
   2. On [lines 42 of your reveal.js file](https://github.com/palantirnet/palantir-reveal/blob/master/palantirnet-theme/assets/js/reveal.js#L42) change margin attribute. The default is set to 0.05. Remember, this is a percentage of your height, and width, and also takes into consideration your zoom.
   3. It is recommended that you do not set the margin below 0.025 or above 0.1 as then the margin may be too small or too large.
   4. Save your file and serve your presentation.
