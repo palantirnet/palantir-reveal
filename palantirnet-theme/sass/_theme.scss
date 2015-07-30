@@ -263,7 +263,7 @@ body.dark {
 
 .reveal a {
 	color: $linkColor;
-	text-decoration: none;
+	text-decoration: underline;
 
 	-webkit-transition: color .15s ease;
 	   -moz-transition: color .15s ease;

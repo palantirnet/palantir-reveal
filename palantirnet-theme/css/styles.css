@@ -1932,8 +1932,8 @@ body.dark {
  *********************************************/
 /* line 264, ../sass/_theme.scss */
 .reveal a {
-  color: #11a9a1;
-  text-decoration: none;
+  color: #0c7b75;
+  text-decoration: underline;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease;
@@ -1941,7 +1941,7 @@ body.dark {
 
 /* line 272, ../sass/_theme.scss */
 .reveal a:hover {
-  color: #0c7b75;
+  color: #11a9a1;
   text-shadow: none;
   border: none;
 }
@@ -1949,7 +1949,7 @@ body.dark {
 /* line 279, ../sass/_theme.scss */
 .reveal .roll span:after {
   color: #fff;
-  background: #0a635f;
+  background: #053533;
 }
 
 /*********************************************
@@ -1973,7 +1973,7 @@ body.dark {
 /* line 303, ../sass/_theme.scss */
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #11a9a1;
+  border-color: #0c7b75;
   box-shadow: none;
 }
 
@@ -1983,45 +1983,45 @@ body.dark {
 /* line 315, ../sass/_theme.scss */
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: #11a9a1;
+  border-right-color: #0c7b75;
 }
 
 /* line 320, ../sass/_theme.scss */
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: #11a9a1;
+  border-left-color: #0c7b75;
 }
 
 /* line 325, ../sass/_theme.scss */
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #11a9a1;
+  border-bottom-color: #0c7b75;
 }
 
 /* line 330, ../sass/_theme.scss */
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: #11a9a1;
+  border-top-color: #0c7b75;
 }
 
 /* line 335, ../sass/_theme.scss */
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #0c7b75;
+  border-right-color: #11a9a1;
 }
 
 /* line 339, ../sass/_theme.scss */
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #0c7b75;
+  border-left-color: #11a9a1;
 }
 
 /* line 343, ../sass/_theme.scss */
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #0c7b75;
+  border-bottom-color: #11a9a1;
 }
 
 /* line 347, ../sass/_theme.scss */
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #0c7b75;
+  border-top-color: #11a9a1;
 }
 
 /*********************************************
@@ -2034,7 +2034,7 @@ body.dark {
 
 /* line 359, ../sass/_theme.scss */
 .reveal .progress span {
-  background: #11a9a1;
+  background: #0c7b75;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -2045,7 +2045,7 @@ body.dark {
  *********************************************/
 /* line 370, ../sass/_theme.scss */
 .reveal .slide-number {
-  color: #11a9a1;
+  color: #0c7b75;
 }
 
 /**
