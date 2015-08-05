@@ -2454,20 +2454,26 @@ body.dark {
  *
  * @copyright Copyright (c) 2015 Palantir.net
  */
-/* line 8, ../sass/_general.scss */
-.logo {
+/* line 7, ../sass/_general.scss */
+.footer {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 9999;
 }
+
 /* line 14, ../sass/_general.scss */
+.logo-wrapper {
+  display: inline-block;
+}
+
+/* line 20, ../sass/_general.scss */
 .logo p {
   position: absolute;
   left: -999px;
   color: transparent;
 }
-/* line 20, ../sass/_general.scss */
+/* line 26, ../sass/_general.scss */
 .logo:after {
   content: " ";
   display: block;
@@ -2476,32 +2482,32 @@ body.dark {
   margin: 0 0 1em 1em;
 }
 
-/* line 29, ../sass/_general.scss */
+/* line 35, ../sass/_general.scss */
 .dark .reveal {
   color: #dbe8ec;
 }
-/* line 32, ../sass/_general.scss */
+/* line 38, ../sass/_general.scss */
 .dark .reveal .logo:after {
   background: url(../imgs/palantirnet-logo--reversed.svg);
 }
 
-/* line 37, ../sass/_general.scss */
+/* line 43, ../sass/_general.scss */
 .white .reveal,
 .light .reveal {
   color: #344041;
 }
-/* line 41, ../sass/_general.scss */
+/* line 47, ../sass/_general.scss */
 .white .reveal .logo:after,
 .light .reveal .logo:after {
   background: url(../imgs/palantirnet-logo.svg);
 }
 
-/* line 46, ../sass/_general.scss */
+/* line 52, ../sass/_general.scss */
 .l-2up > div {
   margin-bottom: 15px;
 }
 @media (min-width: 600px) {
-  /* line 46, ../sass/_general.scss */
+  /* line 52, ../sass/_general.scss */
   .l-2up > div {
     width: 48%;
     margin-bottom: 0;
@@ -2509,24 +2515,24 @@ body.dark {
     float: left;
     font-size: 0.85em;
   }
-  /* line 55, ../sass/_general.scss */
+  /* line 61, ../sass/_general.scss */
   .l-2up > div:nth-of-type(1n) {
     padding-right: 2%;
     padding-left: 0;
   }
-  /* line 60, ../sass/_general.scss */
+  /* line 66, ../sass/_general.scss */
   .l-2up > div:nth-of-type(2n) {
     padding-right: 0;
     padding-left: 2%;
   }
 }
 
-/* line 67, ../sass/_general.scss */
+/* line 73, ../sass/_general.scss */
 .l-3up > div {
   margin-bottom: 15px;
 }
 @media (min-width: 750px) {
-  /* line 67, ../sass/_general.scss */
+  /* line 73, ../sass/_general.scss */
   .l-3up > div {
     width: 31%;
     margin-bottom: 0;
@@ -2534,29 +2540,29 @@ body.dark {
     float: left;
     font-size: 0.7em;
   }
-  /* line 77, ../sass/_general.scss */
+  /* line 83, ../sass/_general.scss */
   .l-3up > div:nth-of-type(1n) {
     padding-right: 2%;
     padding-left: 0;
   }
-  /* line 82, ../sass/_general.scss */
+  /* line 88, ../sass/_general.scss */
   .l-3up > div:nth-of-type(2n) {
     padding-right: 1%;
     padding-left: 1%;
   }
-  /* line 87, ../sass/_general.scss */
+  /* line 93, ../sass/_general.scss */
   .l-3up > div:nth-of-type(3n) {
     padding-right: 0;
     padding-left: 2%;
   }
 }
 
-/* line 94, ../sass/_general.scss */
+/* line 100, ../sass/_general.scss */
 .l-4up > div {
   margin-bottom: 15px;
 }
 @media (min-width: 900px) {
-  /* line 94, ../sass/_general.scss */
+  /* line 100, ../sass/_general.scss */
   .l-4up > div {
     width: 23%;
     margin-bottom: 0;
@@ -2564,29 +2570,29 @@ body.dark {
     float: left;
     font-size: 0.5em;
   }
-  /* line 104, ../sass/_general.scss */
+  /* line 110, ../sass/_general.scss */
   .l-4up > div:nth-of-type(1n) {
     padding-right: 2%;
     padding-left: 0;
   }
-  /* line 109, ../sass/_general.scss */
+  /* line 115, ../sass/_general.scss */
   .l-4up > div:nth-of-type(2n) {
     padding-right: 1%;
     padding-left: 1%;
   }
-  /* line 114, ../sass/_general.scss */
+  /* line 120, ../sass/_general.scss */
   .l-4up > div:nth-of-type(3n) {
     padding-right: 1%;
     padding-left: 1%;
   }
-  /* line 119, ../sass/_general.scss */
+  /* line 125, ../sass/_general.scss */
   .l-4up > div:nth-of-type(4n) {
     padding-right: 0;
     padding-left: 2%;
   }
 }
 
-/* line 127, ../sass/_general.scss */
+/* line 133, ../sass/_general.scss */
 .reveal .attribute {
   font-size: 0.5em;
   color: #7f9aa0;
@@ -2597,12 +2603,12 @@ body.dark {
 /*********************************************
  * AD HOC CUSTOM CLASSES (Originally by Larry)
  *********************************************/
-/* line 138, ../sass/_general.scss */
+/* line 144, ../sass/_general.scss */
 p.bigtext {
   font-size: 150%;
 }
 
-/* line 143, ../sass/_general.scss */
+/* line 149, ../sass/_general.scss */
 .reveal ul + p, .reveal div + p {
   margin-top: 1em;
 }
