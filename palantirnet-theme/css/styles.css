@@ -1933,7 +1933,7 @@ body.dark {
 /* line 264, ../sass/_theme.scss */
 .reveal a {
   color: #0c7b75;
-  text-decoration: underline;
+  text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease;
