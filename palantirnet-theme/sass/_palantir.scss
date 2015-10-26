@@ -127,8 +127,8 @@ $heading3Size: 1.5em;
 $heading4Size: 1.00em;
 
 // Links and actions
-$linkColor: $teal;
-$linkColorHover: darken( $linkColor, 10% );
+$linkColor: darken( $teal, 10% );
+$linkColorHover: $teal;
 
 // Text selection
 $selectionBackgroundColor: $gray;
