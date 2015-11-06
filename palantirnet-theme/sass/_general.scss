@@ -15,6 +15,7 @@
   display: inline-block;
 }
 
+%logo,
 .logo {
 
   p {
@@ -29,6 +30,18 @@
     width: 200px;
     height: 32px;
     margin: 0 0 1em 1em;
+  }
+}
+
+.logo--2 {
+  @extend %logo;
+  left: 245px;
+  width: 200px;
+  height: 55px;
+  margin: 0 0 1em 1em !important;
+
+  &:after {
+    display: none;
   }
 }
 
