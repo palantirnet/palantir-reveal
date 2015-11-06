@@ -14,7 +14,7 @@ Use this repository when creating a slide deck to present at conferences if you 
 2. Pull down this repo and place the contents in the root of your Reveal.js directory, replacing the index file from that repo with the index file from this repository. WARNING: If you have already written out your slide content in the reveal repository, make sure that you save that content and don't overwrite it by replacing the index file.
 3. If you plan to write or modify the sass, install breakpoint: http://breakpoint-sass.com/
 4. Update the Title, Author, and Description metadata in the head of the index.html file.
-4. Edit the html within the index file to contain the content for your presentation. Place your slide content within "&#060;div class="slides"&gt; Your Slides Here! &#060;/div&gt;".
+4. Edit the html within the index file to contain the content for your presentation. Place your slide content within "<div class="slides"> Your Slides Here! </div>".
 4. Follow the rest of the instructions from the Reveal.js readme to serve your slide deck.
 
 -----
@@ -24,21 +24,22 @@ Use this repository when creating a slide deck to present at conferences if you 
 This will switch background colors, change out logos, and change your code syntax highlighting. There is a light and a dark option available, as well as the light option with a white background.
   1. Open your index.html file in the root.
   2. On [line 26](https://github.com/palantirnet/palantir-reveal/blob/master/index.html#L26) change the class on the body tag to "light", "dark", or "white".
-  <pre>
-  &#060;body class="light"&gt;
-    Slide content here
-  &#060;/body&gt;</pre>
+          ```
+          <body class="light">
+            Slide content here
+          </body>
+          ```
   3. Save your file.
 
 ### Remove or Add Background color to inline code.
 This will remove the background color from a code sample.
   1. Open your index.html file in the root.
   2. Wherever you are inputting the code, add "class="no-container" to the pre tag around the code you'd like to not have a background color. Example:
-<pre>
-&#060;pre class="no-container"&gt;
- Your Code here
-&#060;/pre&gt;
-</pre>
+          ```
+          <pre class="no-container">
+           Your Code here
+          </pre>
+          ```
 <small>An example of this can be seen [here](https://github.com/palantirnet/palantir-reveal/blob/master/index.html#L248)</small>
   3. Save your file.
 
@@ -46,18 +47,18 @@ This will remove the background color from a code sample.
 The default font size is 15px. Pre-baked font classes include "font--12", "font--14", "font--16", "font--18", "font--20", "font--22", "font--24", "font--26", "font--28", "font--30", "font--32", "font--34", and "font--36". All font classes are measured in pixels, so be sure your aspect ratio is set correctly before you adjust font sizes.
   1. Open your index.html file in the root.
   2. Wherever you are inputting the code, add the appropriate class to the pre tag around the code you'd like to change the font size for. Example:
-<pre>
-&#060;pre class="font--12"&gt;
- Your Code here
-&#060;/pre&gt;
-</pre>
+          ```
+          <pre class="font--12">
+           Your Code here
+          </pre>
+          ```
 <small>An example of this can be seen [here](https://github.com/palantirnet/palantir-reveal/blob/master/index.html#L248)</small>
   3. Save your file.
 
 ### Have your code break rather than scroll right
   1. Open your index.html file in the root.
   2. Find the code that you want to break rather than to scroll.
-  3. Add "style="word-wrap: break-word;" to your &#060;code&gt; opening tag.
+  3. Add "style="word-wrap: break-word;" to your <code> opening tag.
   <small>An example of this can be seen [here](https://github.com/palantirnet/palantir-reveal/blob/master/index.html#L248)</small>
   4. Save your file.
 
@@ -88,29 +89,43 @@ This provides the option of having 2 column, 3 column, or 4 column layouts on yo
   #### Examples
   Additionally, an inline example of the 4up can be seen starting on [line 40](https://github.com/palantirnet/palantir-reveal/blob/master/index.html#L40-L61)
    1. Two Column Grid
-    <pre>
-    &#060;section class="l-2up"&gt;
-        &#060;div&gt; This is your first column of content &#060;/div&gt;
-        &#060;div&gt; This is your second column of content &#060;/div&gt;
-    &#060;/section&gt;
-    </pre>
+           ```
+           <section class="l-2up">
+               <div> This is your first column of content </div>
+               <div> This is your second column of content </div>
+           </section>
+           ```
    2. Three Column Grid
-    <pre>
-    &#060;section class="l-3up"&gt;
-        &#060;div&gt; This is your first column of content &#060;/div&gt;
-        &#060;div&gt; This is your second column of content &#060;/div&gt;
-        &#060;div&gt; This is your third column of content &#060;/div&gt;
-    &#060;/section&gt;
-    </pre>
+           ```
+           <section class="l-3up">
+               <div> This is your first column of content </div>
+               <div> This is your second column of content </div>
+               <div> This is your third column of content </div>
+           </section>
+           ```
    3. Four Column Grid
-    <pre>
-    &#060;section class="l-4up"&gt;
-        &#060;div&gt; This is your first column of content &#060;/div&gt;
-        &#060;div&gt; This is your second column of content &#060;/div&gt;
-        &#060;div&gt; This is your third column of content &#060;/div&gt;
-        &#060;div&gt; This is your fourth column of content &#060;/div&gt;
-    &#060;/section&gt;
-    </pre>
+           ```
+           <section class="l-4up">
+               <div> This is your first column of content </div>
+               <div> This is your second column of content </div>
+               <div> This is your third column of content </div>
+               <div> This is your fourth column of content </div>
+           </section>
+           ```
+
+### Add a secondary or partner logo.
+This provides the option of display 2 logos in the footer area in the case of a partner presentation.
+  1. Open your index.html file in the root.
+  2. On line 404 there is example markup, commented out for this additional logo, or you can use this example.
+          ```
+            <a class="logo-wrapper" href="url-to-partner.com" title="Link to Palantir.net's website">
+              <div class="logo--2" style="background: url('your/image/path.png') no-repeat; background-size: contain; background-position: left bottom;">
+                <p>Describe the logo here.</p>
+              </div>
+            </a>
+          ```
+  3. Replace the link href, the background image url, and the description in the p tag.
+  4. This functionality only allows you to have one additional logo currently.
 
 -----
 ## License
