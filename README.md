@@ -118,7 +118,7 @@ This provides the option of display 2 logos in the footer area in the case of a 
   1. Open your index.html file in the root.
   2. On line 404 there is example markup, commented out for this additional logo, or you can use this example.
 
-            <a class="logo-wrapper" href="url-to-partner.com" title="Link to Palantir.net's website">
+            <a class="logo-wrapper" href="url-to-partner.com" title="Link to Partner's website">
               <div class="logo--2" style="background: url('your/image/path.png') no-repeat; background-size: contain; background-position: left bottom;">
                 <p>Describe the logo here.</p>
               </div>
