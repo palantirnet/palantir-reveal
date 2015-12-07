@@ -1,0 +1,13 @@
+{
+  "name": "classList",
+  "_cacheHeaders": {
+    "ETag": "\"e87db36a95b2381a8c3ed44582a3926185cede70\"",
+    "Content-Length": "8131",
+    "Content-Type": "application/zip",
+    "Content-Disposition": "attachment; filename=classList.js-master.zip"
+  },
+  "_release": "e-tag:e87db36a9",
+  "_source": "https://github.com/eligrey/classList.js/archive/master.zip",
+  "_target": "*",
+  "_originalSource": "https://github.com/eligrey/classList.js/archive/master.zip"
+}
